@@ -1,8 +1,11 @@
 :root{
-  background: #2C3333
+  --background: #2C3333;
+  --white: #E7F6F2;
+  --azulescuro: #152DFF;
+  --azulclaro: #41ABCC;
 }
 
-*{
+html{
   background-color: var(--background);
 }
 .app {
@@ -25,19 +28,28 @@
 
 .myself-container{
   align-content: center;
+  justify-content: center;
   width: 50%;
+  display: grid;
+}
+
+.align-content{
+  height: 300px;
+  width: 100%;
+  display: inline;
 }
 
 .meunome{
   position: relative;
-  top: -280px;
-  left: 15%;
+  margin: 0;
+  top: -100px;
+  left: 110px;
   font-family: 'Inconsolata', monospace;
   font-style: normal;
   font-weight: 600;
   font-size: 50px;
   text-align: center;
-  color: #E7F6F2;
+  color: var(--white);
 }
 
 .minhaft{
@@ -46,7 +58,7 @@
   width: 300px;
   object-fit: cover;
   border-radius: 60px;
-  margin: 130px;
+  margin: auto;
 }
 
 .rightside-container{
@@ -54,11 +66,52 @@
 }
 
 .navbar{
-  padding: 50px;
+  padding: 50px 50px 0 50px;
   display: flex;
   justify-content: space-between;
 }
 
 .navbar-item{
   margin: 0 auto;
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  color: var(--white);
 }
+
+.navbar-item:hover{
+  background: linear-gradient(to right, var(--azulescuro), var(--azulclaro));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: 400;
+}
+
+.front-dev-container{
+  display: grid;
+  align-content: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+}
+
+.frontend, .developer{
+  font-family: 'Homenaje';
+  font-weight: 400;
+  font-size: 100px;
+}
+
+.frontend{
+  color: var(--white);
+  margin-top: 50px;
+}
+
+.developer{
+  background: linear-gradient(to right, var(--azulescuro), var(--azulclaro));
+  -webkit-background-clip: text;
+  -webkit-text-stroke: 4px transparent;
+  color: rgb(82, 82, 87);
+
+  margin-left: 50px;
+}
+
