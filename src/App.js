@@ -21,7 +21,10 @@ function App() {
             <div className='align-content'>
               <div className='frontend'>FRONT-END</div>
               <div className='developer'>DEVELOPER</div>
-              <a className='github-container'><img src='github-icon.png'/><p>github.com/Ruan-Azeredo</p></a>
+              <a className='github-container' href="https://github.com/Ruan-Azeredo">
+                <img src='github-icon.png' className='github-icon' />
+                <p className='github-link'>github.com/Ruan-Azeredo</p>
+              </a>
             </div>
           </div>
         </div>
