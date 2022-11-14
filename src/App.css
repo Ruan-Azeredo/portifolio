@@ -3,11 +3,36 @@
   --white: #E7F6F2;
   --azulescuro: #152DFF;
   --azulclaro: #41ABCC;
+  --scrollbar: #464646;
 }
 
 html{
   background-color: var(--background);
 }
+
+/* --------------------- estiliza scroll bar --------------------- */
+/* Works on Firefox */
+* {
+  scrollbar-width: thin;
+  scrollbar-color: var(--scrollbar) var(--background);
+}
+
+/* Works on Chrome, Edge, and Safari */
+*::-webkit-scrollbar {
+  width: 12px;
+}
+
+*::-webkit-scrollbar-track {
+  background: var(--background);
+}
+
+*::-webkit-scrollbar-thumb {
+  background-color: var(--scrollbar);
+  border-radius: 20px;
+  border: 3px solid var(--background);
+}
+/*----------------------------------------------------------------*/
+
 .app {
   margin: 50px;
 }
