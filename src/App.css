@@ -1,38 +1,64 @@
-.App {
-  text-align: center;
+:root{
+  background: #2C3333
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+*{
+  background-color: var(--background);
+}
+.app {
+  margin: 50px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.glass{
+  background: rgba(217, 217, 217, 0.2);
+  box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.25);
+  backdrop-filter: blur(25px);
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.ruan-card{
+  height: 85vh;
+  width: 100%;
+  border-radius: 20px;
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  flex-direction: row;
 }
 
-.App-link {
-  color: #61dafb;
+.myself-container{
+  align-content: center;
+  width: 50%;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.meunome{
+  position: relative;
+  top: -280px;
+  left: 15%;
+  font-family: 'Inconsolata', monospace;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 50px;
+  text-align: center;
+  color: #E7F6F2;
+}
+
+.minhaft{
+  object-position: 90% 10% ;
+  height: 300px;
+  width: 300px;
+  object-fit: cover;
+  border-radius: 60px;
+  margin: 130px;
+}
+
+.rightside-container{
+  width: 50%;
+}
+
+.navbar{
+  padding: 50px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.navbar-item{
+  margin: 0 auto;
 }
