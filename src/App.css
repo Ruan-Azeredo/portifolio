@@ -110,6 +110,7 @@ html{
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   font-weight: 400;
+  cursor: pointer;
 }
 
 .front-dev-container{
