@@ -197,4 +197,5 @@
 .curriculo-border{
     width: fit-content;
     margin: 15px auto 0 auto;
+    border-radius: 5px;
 }
