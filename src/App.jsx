@@ -1,5 +1,6 @@
 import './App.css';
-import './AboutMe.css'
+import './AboutMe.css';
+import './Title.css';
 import MainCard from './MainCard';
 import AboutMe from './AboutMe';
 
