@@ -16,6 +16,10 @@
     width: 600px;
     height: 300px;
     border-radius: 10px;
+    position: relative;
+    top: -15px;
+    left: -15px;
+
 }
 
 .navbar-screen{
@@ -126,8 +130,6 @@
     height: 300px;
     border-radius: 10px;
     position: relative;
-    top: -280px;
-    left: 20px;
     z-index: -10;
     display: grid;
     align-content: center;
@@ -139,6 +141,9 @@
     height: 296px;
     border-radius: 10px;
     background: var(--background);
+    display: grid;
+    align-content: center;
+    justify-content: center;
 }
 
 /* Curriculo Component */
