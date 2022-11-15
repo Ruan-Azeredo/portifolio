@@ -1,10 +1,11 @@
 import CurriculoComponent from "./CurriculoComponent";
+import Title from "./Title";
 import VsScreenComponent from "./VsScreenComponent";
 
 function AboutMe() {
     return (
         <div className="AboutMe">
-            <h2>SOBRE MIM</h2>
+            <Title title='SOBRE MIM'/>
 
             <div className="aboutme-container">
                 <VsScreenComponent />
