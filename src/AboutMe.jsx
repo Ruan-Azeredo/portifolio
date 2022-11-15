@@ -11,7 +11,26 @@ function AboutMe() {
                 <VsScreenComponent />
                 <CurriculoComponent/>
             </div>
-        </div>
+            <h3 className="tecnologias-fav-title">TECNOLOGIAS FAVORITAS</h3>
+            <div className="grid-bar-tech-fav"></div>
+            <div className="tech-icons-container">
+                <div className="first-line">
+                    <img src="js-icon.png" alt="" />
+                    <img src="react-icon.png" alt="" />
+                    <img src="tailwind-icon.png" alt="" />
+                    <img src="figma-icon.png" alt="" />
+                    <img src="laravel-icon.png" alt="" />
+                    <img src="node-icon.png" alt="" />
+                    <img src="docker-icon.png" alt="" />
+                </div>
+                <div className="second-line">
+                    <img src="next-icon.png" alt="" />
+                    <img src="css-icon.png" alt="" />
+                    <img src="postgres-icon.png" alt="" />
+                    <img src="github-icon.png" alt="" />
+                </div>
+            </div>
+        </div>    
     )
 }
 
