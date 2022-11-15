@@ -1,0 +1,14 @@
+:root{
+    --azulescuro: #152DFF;
+    --azulclaro: #41ABCC;
+}
+
+.title{
+    text-align: center;
+    margin: 60px 0;
+    font-size: 36px;
+    font-weight: 700;
+    background: linear-gradient(to right, var(--azulescuro), var(--azulclaro));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
