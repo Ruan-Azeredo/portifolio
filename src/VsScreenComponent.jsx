@@ -23,7 +23,7 @@ export default function VsScreenComponent() {
                     </div>
                 </div>
             </div>
-            <div className="border-gradient"></div>
+            <div className="border-gradient"> <div className="inside-gradient"></div></div>
         </div>
     )
 }
