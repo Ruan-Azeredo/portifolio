@@ -1,8 +1,8 @@
 export default function VsScreenComponent() {
     return (
         <div>
-            <div className="border-gradient"><div className="inside-gradient">
-                <div className="background-black">
+            <div className="border-gradient z-10"><div className="inside-gradient">
+                <div className="bg-black background-black-screen">
                     <div className="navbar-screen">
                         <div className="options-screen">
                             <div className="circle-screen red-c"></div>
