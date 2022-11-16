@@ -7,7 +7,26 @@
     --background: #2C3333;
 }
 
+.gradient-bg{
+    width: fit-content;
+    height: fit-content;
+    background: linear-gradient(to right, var(--azulclaro), var(--azulescuro));
+    display: flex;
+    border-radius: 10px
+}
+
+.inside-bg{
+    width: calc(100% - 4px);
+    height: calc(100% - 4px);
+    background: var(--background);
+    margin: auto;
+    border-radius: 10px
+}
+
 .card-black{
+    position: relative;
+    top: -15px;
+    left: -15px;
     width: 500px;
     height: 470px;
     background: var(--black);
