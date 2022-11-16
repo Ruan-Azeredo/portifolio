@@ -80,3 +80,19 @@
     width: 20px;
     filter: brightness(13%);
 }
+
+.divisao-col-projetos{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.col1, .col2{
+    display: flex;
+    flex-direction: column;
+    gap: 120px;
+}
+
+.col2{
+    padding-top: 250px;
+}
