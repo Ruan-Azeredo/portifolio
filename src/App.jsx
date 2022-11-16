@@ -3,10 +3,12 @@ import './AboutMe.css';
 import './Title.css';
 import './Projetos.css'
 import './Trajetoria.css'
+import './Contato.css'
 import MainCard from './MainCard';
 import AboutMe from './AboutMe';
 import Projetos from './Projetos';
 import Trajetoria from './Trajetoria';
+import Contato from './Contato';
 
 function App() {
   return (
@@ -14,7 +16,8 @@ function App() {
       <MainCard />
       <AboutMe />
       <Projetos />
-      <Trajetoria/>
+      <Trajetoria />
+      <Contato/>
     </div>
   );
 }
