@@ -1,0 +1,123 @@
+:root{
+    --black: #202020;
+    --gray: #3d3d3d;
+    --cinzaclaro: #909090;
+    --azulescuro: #152DFF;
+    --azulclaro: #41ABCC;
+    --background: #2C3333;
+}
+
+.gradient-bg{
+    width: fit-content;
+    height: fit-content;
+    background: linear-gradient(to right, var(--azulclaro), var(--azulescuro));
+    display: flex;
+    border-radius: 10px
+}
+
+.inside-bg{
+    width: calc(100% - 4px);
+    height: calc(100% - 4px);
+    background: var(--background);
+    margin: auto;
+    border-radius: 10px
+}
+
+.card-black{
+    position: relative;
+    top: -15px;
+    left: -15px;
+    width: 500px;
+    height: 470px;
+    background: var(--black);
+    border-radius: 10px;
+
+    transition: all ease-in-out 0.15s ;
+}
+
+.card-black:hover{
+    transform: translateY(-10px);  
+}
+
+.nav-card{
+    display: flex;
+    justify-content: space-between;
+    padding: 15px;
+    margin: 0 10px;
+
+    font-family: 'Inter';
+    font-weight: 400;
+    font-size: 20px;
+
+    color: white;
+    align-items: center;
+}
+
+.icons-card{
+    display: flex;
+    gap: 15px;
+}
+
+.icons-card img{
+    height: 30px;
+}
+
+.img-card{
+    display: grid;
+    margin: 0 auto;
+    width: 450px;
+}
+
+.infos-card{
+    padding: 10px;
+    margin: 0 15px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.txt-card{
+    display: grid;
+    align-content: center;
+    width: 300px;
+
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 12px;
+    line-height: 19px;
+    text-align: justify;
+
+    color: white;
+}
+
+.git-button{
+    width: 70px;
+    height: 30px;
+    display: grid;
+    justify-content: center;
+    align-content: center;
+    border-radius: 5px;
+    margin: 30px auto;
+    background: linear-gradient(to right, var(--azulescuro), var(--azulclaro));
+}
+
+.git-button img{
+    width: 20px;
+    filter: brightness(13%);
+}
+
+.divisao-col-projetos{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.col1, .col2{
+    display: flex;
+    flex-direction: column;
+    gap: 120px;
+}
+
+.col2{
+    padding-top: 250px;
+}
