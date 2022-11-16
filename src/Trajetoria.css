@@ -11,6 +11,8 @@
     width: fit-content;
     height: fit-content;
     border-radius: 10px;
+    margin-left: 20px;
+    margin-top: 10px;
 }
 
 .title-traj{
@@ -22,7 +24,7 @@
     justify-content: center;
     border-radius: 20px;
     padding: 10px 0;
-    margin: 0 0 20px 0;
+    margin: 20px 0 20px 0;
     background-color: var(--black);
 }
 
@@ -99,8 +101,12 @@
 }
 
 /* time line*/
-
+/* 
 .time-line-container{
+    justify-content: center;
+} */
+
+.time-line{
     justify-content: center;
 }
 
@@ -110,9 +116,10 @@
 }
 
 .time-line-gradient{
-    width: 2px;
-    background: linear-gradient(to bottom, var(--azulescuro), var(--azulclaro));
-    height: 500px;
+    width:90vw;
+    position: absolute;
+    background: linear-gradient(to right, var(--azulescuro), var(--azulclaro));
+    height: 2px;
 }
 
 .time-circle{
@@ -123,32 +130,36 @@
 
 .date-container{
     display: flex;
+    flex-direction: column;
     position: relative;
 }
 
+.date-l, .date-r{
+    top: -60px;
+}
+
 .date-l{
-    top: 140px;
-    right: -6px;
+    left: -150px;
 }
 
 .date-r{
-    top: 330px;
-    left: -6px;
+    left: 200px;
 }
 
-.c-1{
-    background-color: #1553ff;
-}
-
-.c-2{
-    background-color: var(--azulclaro);
+.c-1, .c-2{
+    background-color: white;
+    position: relative  ;
+    top: 19px;
+    z-index: 12;
 }
 
 .date{
     height: fit-content;
     position: relative;
+    width: fit-content;
     margin: 0 20px;
-    top: -14px;
+    top: 10px;
+    left: -65px;
     background-color: white;
     padding: 8px 16px;
     border-radius: 20px;    
