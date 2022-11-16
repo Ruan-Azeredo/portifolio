@@ -10,7 +10,6 @@
 .card-traj{
     width: fit-content;
     height: fit-content;
-    padding: 30px;
     border-radius: 10px;
 }
 
@@ -23,6 +22,7 @@
     justify-content: center;
     border-radius: 20px;
     padding: 10px 0;
+    margin: 0 0 20px 0;
     background-color: var(--black);
 }
 
@@ -43,7 +43,7 @@
     background: radial-gradient(#FFFDFD 0%, #808080 100%);
     transform: rotate(-5deg);
     margin: auto 0;
-    transition: all ease-in-out 0.3s ;
+    transition: all ease-in-out 0.3s 0.3s;
 }
 
 .description-traj{
@@ -57,7 +57,7 @@
     color: white;
 
     opacity: 0;
-    transition: all ease-in-out 0.3s 0.3s;
+    transition: all ease-in-out 0.3s 0.6s;
     z-index: -10;
 }
 
@@ -127,12 +127,12 @@
 }
 
 .date-l{
-    top: 200px;
+    top: 140px;
     right: -6px;
 }
 
 .date-r{
-    top: 500px;
+    top: 330px;
     left: -6px;
 }
 
@@ -142,4 +142,18 @@
 
 .c-2{
     background-color: var(--azulclaro);
+}
+
+.date{
+    height: fit-content;
+    position: relative;
+    margin: 0 20px;
+    top: -14px;
+    background-color: white;
+    padding: 8px 16px;
+    border-radius: 20px;    
+}
+
+.mt{
+    margin-top: 220px;
 }
