@@ -97,3 +97,49 @@
 .bg-logo-traj img{
     height: 80px;
 }
+
+/* time line*/
+
+.time-line-container{
+    justify-content: center;
+}
+
+.time-line-container, .time-line{
+    display: flex;
+    flex-direction: row;
+}
+
+.time-line-gradient{
+    width: 2px;
+    background: linear-gradient(to bottom, var(--azulescuro), var(--azulclaro));
+    height: 500px;
+}
+
+.time-circle{
+    width: 10px;
+    height: 10px;
+    border-radius: 5px;
+}
+
+.date-container{
+    display: flex;
+    position: relative;
+}
+
+.date-l{
+    top: 200px;
+    right: -6px;
+}
+
+.date-r{
+    top: 500px;
+    left: -6px;
+}
+
+.c-1{
+    background-color: #1553ff;
+}
+
+.c-2{
+    background-color: var(--azulclaro);
+}
