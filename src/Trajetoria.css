@@ -7,6 +7,10 @@
     --background: #2C3333;
 }
 
+.trajetoria-container{
+    margin-top: 150px;
+}
+
 .card-traj{
     width: fit-content;
     height: fit-content;
@@ -108,6 +112,7 @@
 
 .time-line{
     justify-content: center;
+    margin-top: 100px;
 }
 
 .time-line-container, .time-line{
