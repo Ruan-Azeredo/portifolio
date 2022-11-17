@@ -3,7 +3,7 @@ import Title from "./Title";
 
 export default function Trajetoria() {
     return (
-        <div className="trajetoria-container">
+        <div className="trajetoria-container"><a name='trajetoria'></a>
             <Title title='Trajetoria' grayscale={true}/>
                 <div className="time-line">
                     <div className="date-container date-l">

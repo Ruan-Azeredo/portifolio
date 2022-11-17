@@ -3,7 +3,7 @@ import Title from "./Title";
 
 export default function Contato() {
     return (
-        <div className="contato-container">
+        <div className="contato-container"><a name='contato'></a>
             <div className="border-gradient-cont">
                 <div className="inside-gradient-cont">
                     <div className="main-card-contato bg-black">
