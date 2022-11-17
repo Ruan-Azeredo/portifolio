@@ -66,6 +66,7 @@
     display: grid;
     margin: 0 auto;
     width: 450px;
+    border-radius: 10px;
 }
 
 .infos-card{
