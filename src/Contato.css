@@ -21,7 +21,7 @@
 }
 
 .border-gradient-cont{
-    background: linear-gradient(to right, var(--azulclaro), var(--azulescuro));
+    background: linear-gradient(to right, var(--azulescuro), var(--azulclaro));
     border-radius: 10px;
     position: relative;
     display: grid;
@@ -71,7 +71,7 @@
 }
 
 .minicard-contato:hover, .minicard-contato-gray:hover{
-    background: linear-gradient(to right, var(--azulclaro), var(--azulescuro));
+    background: linear-gradient(to right, var(--azulescuro), var(--azulclaro));
 }
 
 .icon-label{

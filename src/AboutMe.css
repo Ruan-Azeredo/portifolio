@@ -133,7 +133,7 @@
 }
 
 .border-gradient{
-    background: linear-gradient(to right, var(--azulclaro), var(--azulescuro));
+    background: linear-gradient(to right, var(--azulescuro), var(--azulclaro));
     border-radius: 10px;
     position: relative;
     display: grid;
@@ -216,7 +216,7 @@
 }
 
 .grid-bar-tech-fav{
-    background: linear-gradient(to right, var(--azulclaro), var(--azulescuro));
+    background: linear-gradient(to right, var(--azulescuro), var(--azulclaro));
     width: 198px;
     height: 2px;
     position: relative;

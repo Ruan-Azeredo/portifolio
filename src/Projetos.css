@@ -10,7 +10,7 @@
 .gradient-bg{
     width: fit-content;
     height: fit-content;
-    background: linear-gradient(to right, var(--azulclaro), var(--azulescuro));
+    background: linear-gradient(to right, var(--azulescuro), var(--azulclaro));
     display: flex;
     border-radius: 10px
 }
