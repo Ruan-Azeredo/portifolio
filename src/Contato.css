@@ -63,6 +63,11 @@
     transition: all ease-in-out 0.3s;
 }
 
+a:link{
+    text-decoration: var(--black);
+    font-style: none
+}
+
 .minicard-contato{
     background-color: var(--black);
 }
