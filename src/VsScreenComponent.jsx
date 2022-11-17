@@ -18,7 +18,7 @@ export default function VsScreenComponent() {
                             <p className="ruan-function">Ruan() &#123;</p>
                             <div className="inside-function">
                                 <div className="gradient-bar-screen"></div>
-                                <p className="inside-function-ruan">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non.</p>
+                                <p className="inside-function-ruan">Ola, meu chamo Ruan, tenho 20 anos e estou trilhando este caminho de Desenvolvedor Web. Gosto muito de desenvolver interfaces Front-end, porem estou sempre aberto a desenvolver o Back-end de algumas aplicações, afinal, gosto de construir aplicações completas que possa ver funcionando no final. Sou um grande fã de JavaScript e gosto de desenvolver alguns designs também. Gosto de estar sempre aberto para novas tecnologias.</p>
                             </div>
                             <p className="ruan-close-function">&#125;</p>
                         </div>
