@@ -70,6 +70,10 @@
     background-color: var(--cinzaclaro);
 }
 
+.minicard-contato:hover, .minicard-contato-gray:hover{
+    background: linear-gradient(to right, var(--azulclaro), var(--azulescuro));
+}
+
 .icon-label{
     display: grid;
     justify-items: center;
