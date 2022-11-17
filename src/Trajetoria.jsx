@@ -16,10 +16,7 @@ export default function Trajetoria() {
                     </div>  
                     <div className="time-line-gradient"></div>
                 </div>
-            <div className="time-line-container">
-                
-                
-            </div>
+            <div className="time-line-container"></div>
         </div>
     )
 }
