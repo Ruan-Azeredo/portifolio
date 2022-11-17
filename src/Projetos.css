@@ -99,6 +99,7 @@
     border-radius: 5px;
     margin: 30px auto;
     background: linear-gradient(to right, var(--azulescuro), var(--azulclaro));
+    cursor: pointer;
 }
 
 .git-button img{
