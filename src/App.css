@@ -10,6 +10,10 @@ html{
   background-color: var(--background);
 }
 
+a:visited, a:link{
+  color: white;
+}
+
 /* --------------------- estiliza scroll bar --------------------- */
 /* Works on Firefox */
 * {

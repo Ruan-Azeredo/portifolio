@@ -4,7 +4,7 @@ import VsScreenComponent from "./VsScreenComponent";
 
 function AboutMe() {
     return (
-        <div className="AboutMe">
+        <div className="AboutMe"><a name='sobremim'></a>
             <Title title='SOBRE MIM'/>
 
             <div className="aboutme-container">

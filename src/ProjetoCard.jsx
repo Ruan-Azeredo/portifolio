@@ -14,7 +14,7 @@ export default function ProjetoCard(props) {
                     <img className="img-card" src={props.screen} alt="" />
                     <div className="infos-card">
                         <p className="txt-card">{props.description}</p>
-                        <a src={props.link} className="git-button"><img src="github-icon.png" alt=""/></a>
+                        <a href={props.link} className="git-button"><img src="github-icon.png" alt=""/></a>
                     </div>
                 </div>
             </div>

@@ -9,10 +9,10 @@ function MainCard() {
             </div>
             <div className='rightside-container'>
             <div className='navbar'>
-                <span className='navbar-item'>SOBRE MIM</span>
-                <span className='navbar-item'>PROJETOS</span>
-                <span className='navbar-item'>TRAJETORIA</span>
-                <span className='navbar-item'>CONTATO</span>
+                <span className='navbar-item'><a href="#sobremim">SOBRE MIM</a></span>
+                <span className='navbar-item'><a href="#projetos">PROJETOS</a></span>
+                <span className='navbar-item'><a href="#trajetoria">TRAJETORIA</a></span>
+                <span className='navbar-item'><a href="#contato">CONTATO</a></span>
             </div>
             <div className='front-dev-container'>
                 <div className='align-content'>
