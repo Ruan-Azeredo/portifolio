@@ -107,6 +107,7 @@
 }
 
 .divisao-col-projetos{
+    margin: 0 50px;
     display: flex;
     flex-direction: row;
     justify-content: space-around;

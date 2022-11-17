@@ -1,0 +1,107 @@
+:root{
+    --black: #202020;
+    --gray: #3d3d3d;
+    --cinzaclaro: #909090;
+    --azulescuro: #152DFF;
+    --azulclaro: #41ABCC;
+    --background: #2C3333;
+}
+
+.contato-container{
+    display: flex;
+    margin-top: 100px;
+    position: relative;
+}
+
+.main-card-contato{
+    width: 500px;
+    height: 200px;
+    left: -200px;
+    top: 130px;
+}
+
+.border-gradient-cont{
+    background: linear-gradient(to right, var(--azulclaro), var(--azulescuro));
+    border-radius: 10px;
+    position: relative;
+    display: grid;
+    align-content: center;
+    justify-content: center;
+    width: 750px;
+    height: 450px;
+    left: 30%;
+}
+
+.inside-gradient-cont{
+    width: calc(750px - 4px);
+    height: calc(450px - 4px);
+    border-radius: 10px;
+    background: var(--background);
+    display: flex;
+    margin: auto;
+}
+
+.contatos-container{
+    display: flex;
+    flex-direction: column;
+    align-content: space-between;
+    justify-content: space-evenly;
+    height: 100%;
+    margin-right: 15px;
+}
+
+.minicard-contato, .minicard-contato-gray{
+    background-color: var(--black);
+    width: 320px;
+    height: 100px;
+    position: relative;
+    border-radius: 10px;
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.25);
+    padding: 10px;
+    display: flex;
+    color: white;
+}
+
+.minicard-contato{
+    background-color: var(--black);
+}
+
+.minicard-contato-gray{
+    background-color: var(--cinzaclaro);
+}
+
+.minicard-contato:hover, .minicard-contato-gray:hover{
+    background: linear-gradient(to right, var(--azulclaro), var(--azulescuro));
+}
+
+.icon-label{
+    display: grid;
+    justify-items: center;
+    align-items: center;
+}
+
+.minicard-route{
+    display: grid;
+    align-content: center;
+    margin: 0 auto;
+}
+
+.title-contato{
+    width: fit-content;
+    margin: 25px auto;
+    font-size: 36px;
+    font-weight: 700;
+    background: linear-gradient(to right, var(--light), var(--dark));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.text-contato{
+    font-family: 'Inter';
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    text-align: center;
+    margin: 0 20px;
+    color: var(--cinzaclaro);
+}

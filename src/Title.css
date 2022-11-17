@@ -1,6 +1,8 @@
 :root{
     --azulescuro: #152DFF;
     --azulclaro: #41ABCC;
+    --light: #E1E1E1;
+    --dark: #646464;
 }
 
 .title{
@@ -8,7 +10,16 @@
     margin: 60px auto;
     font-size: 36px;
     font-weight: 700;
+}
+
+.bluescale{
     background: linear-gradient(to right, var(--azulescuro), var(--azulclaro));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.grayscale{
+    background: linear-gradient(to right, var(--light), var(--dark));
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
