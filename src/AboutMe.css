@@ -247,3 +247,63 @@
     transform: rotate(5deg);
     transition: ease-in-out 0.3s;
 }
+
+@media (max-width: 550px){
+    .aboutme-container{
+        flex-direction: column;
+    }
+
+    .border-gradient{
+        width: fit-content;
+        margin: 0 auto;
+    }
+
+    .background-black-screen{
+        width: 350px;
+        height: 200px;
+    }
+
+    .navbar-screen{
+        height: 20px;
+    }
+
+    .options-screen, .index-screen{
+        height: 20px;
+        width: 70px;
+    }
+
+    .index-screen{
+        font-size: 11px;
+    }
+
+    .circle-screen{
+        width: 10px;
+        height: 10px;
+    }
+
+    .complete-nav-screen{
+        width: calc(100% - 140px);
+    }
+
+    .sidebar-screen{
+        width: 15px;
+        height: calc(100% - 20px);
+    }
+
+    .description-screen-container{
+        font-size: 11px;
+        padding: 10px;
+        font-weight: 300;
+    }
+
+    .inside-function-ruan{
+        padding: 0 10px;
+        margin: 5px;
+    }
+
+    .gradient-bar-screen{
+        width: 10px;
+        margin: 5px 0;
+    }
+
+}
