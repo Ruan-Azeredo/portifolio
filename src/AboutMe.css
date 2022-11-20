@@ -249,6 +249,11 @@
 }
 
 @media (max-width: 550px){
+
+    .AboutMe{
+        height: auto;
+    }
+
     .aboutme-container{
         flex-direction: column;
     }
