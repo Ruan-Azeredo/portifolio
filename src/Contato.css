@@ -111,3 +111,51 @@ a:link{
     margin: 0 20px;
     color: var(--cinzaclaro);
 }
+
+@media (max-width: 550px){
+
+    .border-gradient-cont{
+        width: 350px;
+        height: 500px;
+        left: auto;
+        margin: auto
+    }
+
+    .inside-gradient-cont{
+        width: calc(350px - 4px);
+        height: calc(500px - 4px);
+        flex-direction: column;
+    }
+
+    .main-card-contato{
+        top: -80px;
+        left: 0;
+        width: 320px;
+        margin: 0 auto;
+        height: auto;
+    }
+
+    .text-contato{
+        margin: 0 20px 20px 20px;
+    }
+
+    .title-contato{
+        margin: 15px auto;
+    }
+
+    .contatos-container{
+        margin: 0 auto;
+        top: -10px;
+        position: relative;
+    }
+
+    .minicard-contato, .minicard-contato-gray{
+        width: 280px;
+        height: 60px;
+        font-size: 14px;
+    }
+
+    .icon-label img{
+        width: 60%;
+    }
+}
