@@ -38,7 +38,7 @@
     border-radius: 10px;
     display: flex;
     transform: rotate(5deg);
-    transition: all ease-in-out 0.2s ;
+    transition: all ease-in-out 0.3s ;
 }
 
 .bg-logo-traj{
@@ -49,7 +49,7 @@
     background: radial-gradient(#FFFDFD 0%, #808080 100%);
     transform: rotate(-5deg);
     margin: auto 0;
-    transition: all ease-in-out 0.2s 0.2s;
+    transition: all ease-in-out 0.3s 0.3s;
 }
 
 .description-traj{
@@ -63,7 +63,7 @@
     color: white;
 
     opacity: 0;
-    transition: all ease-in-out 0.2s 0.4s;
+    transition: all ease-in-out 0.3s 0.6s;
     z-index: -10;
 }
 
@@ -76,7 +76,7 @@
     left: -7px;
     border-radius: 5px;
 
-    transition: all ease-in-out 0.2s;
+    transition: all ease-in-out 0.3s;
 }
 
 .card-traj:hover .card-infos-traj{
@@ -190,7 +190,8 @@
 
     .date{
         left: 0;
-        margin: 0 40px;
+        margin: 0;
+        top: 40px;
     }
 
     .date-l, .date-r{
@@ -201,8 +202,11 @@
     }
 
     .c-1, .c-2{
-        top: 5px;
-        margin: 0 85px;
+        top: 3px;
+        margin: 0 -48px;
+        height: 37px;
+        width: 64px;
+        border-radius: 0;
     }
 
     .card-traj{
@@ -222,11 +226,34 @@
     .title-traj{
         font-size: 16px;
         padding: 5px 0;
+        width: 100px;
+        margin: 20px auto;
     }
 
     .gradient-bot{
         height: 5px;
         margin-top: 5px;
+    }
+
+     .card-infos-traj{
+        transform: rotate(0);
+        padding: 0 15px;
+    }
+    
+     .bg-logo-traj{
+        transform: rotate(0);
+    }
+    
+     .description-traj{
+        padding-left: 10px;
+        width: 200px;
+        font-size: 12px;
+        opacity: 100%;
+    }
+    
+     .gradient-bot{
+        transform: rotate(0);
+        left: 0;
     }
 
     .card-traj:hover .card-infos-traj{
