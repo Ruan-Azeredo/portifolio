@@ -306,4 +306,25 @@
         margin: 5px 0;
     }
 
+    .bg-black{
+        top: -10px;
+        left: -10px;
+    }
+
+    .black-card-curriculo{
+        margin: 100px auto;
+        height: 300px;
+        left: 0;
+    }
+
+    .curriculo-img{
+        top: -10px;
+        left: -10px;
+    }
+
+    .link-curriculo{
+        font-size: 10px;
+    }
+
+
 }
