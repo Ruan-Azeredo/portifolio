@@ -127,6 +127,10 @@
 
 @media (max-width: 550px){
 
+    .gradient-bg{
+        display: grid;
+    }
+
     .divisao-col-projetos{
         flex-direction: column;
         margin: 0;
