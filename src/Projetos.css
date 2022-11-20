@@ -124,3 +124,52 @@
 .col2{
     padding-top: 250px;
 }
+
+@media (max-width: 550px){
+
+    .divisao-col-projetos{
+        flex-direction: column;
+        margin: 0;
+        align-items: center;
+    }
+
+    .card-black{
+        width: 340px;
+        height: fit-content;
+        top: -10px;
+        left: -10px;
+    }
+
+    .img-card{
+        width: 310px;
+    }
+
+    .nav-card{
+        font-size: 12px;
+        padding: 10px;
+    }
+
+    .icons-card img{
+        height: 20px;
+    }
+
+    .txt-card{
+        font-size: 10px;
+        line-height: 15px;
+    }
+
+    .git-button{
+        width: 50px;
+        height: 25px;
+        margin-left: 15px;
+    }
+
+    .col1, .col2 {
+        gap: 80px;
+    }
+
+    .col2{
+        padding-top: 80px;
+    }
+
+}

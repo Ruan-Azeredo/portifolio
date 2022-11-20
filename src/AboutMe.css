@@ -247,3 +247,112 @@
     transform: rotate(5deg);
     transition: ease-in-out 0.3s;
 }
+
+@media (max-width: 550px){
+
+    .AboutMe{
+        height: auto;
+    }
+
+    .aboutme-container{
+        flex-direction: column;
+    }
+
+    .border-gradient{
+        width: fit-content;
+        margin: 0 auto;
+    }
+
+    .background-black-screen{
+        width: 350px;
+        height: 200px;
+    }
+
+    .navbar-screen{
+        height: 20px;
+    }
+
+    .options-screen, .index-screen{
+        height: 20px;
+        width: 70px;
+    }
+
+    .index-screen{
+        font-size: 11px;
+    }
+
+    .circle-screen{
+        width: 10px;
+        height: 10px;
+    }
+
+    .complete-nav-screen{
+        width: calc(100% - 140px);
+    }
+
+    .sidebar-screen{
+        width: 15px;
+        height: calc(100% - 20px);
+    }
+
+    .description-screen-container{
+        font-size: 11px;
+        padding: 10px;
+        font-weight: 300;
+    }
+
+    .inside-function-ruan{
+        padding: 0 10px;
+        margin: 5px;
+    }
+
+    .gradient-bar-screen{
+        width: 10px;
+        margin: 5px 0;
+    }
+
+    .bg-black{
+        top: -10px;
+        left: -10px;
+    }
+
+    .black-card-curriculo{
+        margin: 80px auto 0 auto;
+        height: 300px;
+        left: 0;
+    }
+
+    .curriculo-img{
+        top: -10px;
+        left: -10px;
+    }
+
+    .link-curriculo{
+        font-size: 10px;
+    }
+
+    .tecnologias-fav-title{
+        margin-top: 60px;
+        font-size: 20px;
+    }
+
+    .grid-bar-tech-fav{
+        left: 0;
+        margin: 0 auto;
+    }
+
+    .tech-icons-container{
+        margin-top: 25px;
+        gap: 15px;
+    }
+
+    .first-line img, .second-line img {
+        object-fit: contain;
+        height: 30px;
+    }
+
+    .first-line, .second-line {
+        gap: 15px;
+    }
+
+}
