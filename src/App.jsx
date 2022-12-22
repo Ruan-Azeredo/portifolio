@@ -1,3 +1,4 @@
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import './App.css';
 import './AboutMe.css';
 import './Title.css';
@@ -5,23 +6,18 @@ import './Projetos.css'
 import './Trajetoria.css'
 import './Contato.css'
 import './Footer.css'
-import MainCard from './MainCard';
-import AboutMe from './AboutMe';
-import Projetos from './Projetos';
-import Trajetoria from './Trajetoria';
-import Contato from './Contato';
-import Footer from './Footer';
+import CardBlack from './CardBlack';
+import Home from './Home';
+import PageProjetoLayout from './PageProjetoLayout';
 
 function App() {
   return (
-    <div className='app'>
-      <MainCard />
-      <AboutMe />
-      <Projetos />
-      <Trajetoria />
-      <Contato />
-      <Footer />
-    </div>
+    <Router>
+      <Routes>
+        <Route path='/' element={<Home/>} />
+        <Route path='/comp' element={<PageProjetoLayout/>} />
+      </Routes>   
+    </Router>
   );
 }
 
