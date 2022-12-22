@@ -1,6 +1,6 @@
-import CurriculoComponent from "./CurriculoComponent";
-import Title from "./Title";
-import VsScreenComponent from "./VsScreenComponent";
+import CurriculoComponent from "../components/CurriculoComponent";
+import Title from "../components/Title";
+import VsScreenComponent from "../components/VsScreenComponent";
 
 function AboutMe() {
     return (
