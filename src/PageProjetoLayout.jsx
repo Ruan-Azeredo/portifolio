@@ -75,7 +75,7 @@ export default function PageProjetoLayout(props) {
                     color: white;
                     display: flex;
                     justify-content: center;
-                    margin: 40px 0
+                    margin: 20px 0 50px 0;
                 }
                 .header .header-content{
                     display: flex;
