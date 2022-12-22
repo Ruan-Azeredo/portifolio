@@ -17,7 +17,7 @@ export default function PageProjetoLayout() {
                 <div className="title-project">{title}</div>
                 <div className="header-content">
                     <div className="left-side">
-                        <div className="descrition">{description}</div>
+                        <div className="description">{description}</div>
                         <div className="git-container">
                             <img src="github-icon.png"/>
                             <div>{link}</div>
@@ -59,6 +59,46 @@ export default function PageProjetoLayout() {
                     display: flex;
                     justify-content: center;
                     margin: 40px 0
+                }
+                .header .header-content{
+                    display: flex;
+                    flex-direction: row
+                }
+
+                .header-content .left-side{
+                    width: 50%;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: space-around
+                }
+
+                .header-content .description{
+                    font-family: 'Inter';
+                    font-style: normal;
+                    font-weight: 500;
+                    font-size: 20px;
+                    line-height: 29px;
+                    text-align: justify;
+                    color: #FFFFFF;
+                    margin: 0 50px;
+                }
+
+                .header-content .git-container{
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: center;
+                    font-family: 'Inconsolata';
+                    font-style: normal;
+                    font-weight: 400;
+                    font-size: 16px;
+                    color: #FFFFFF;
+                    gap: 15px;
+                    align-items: center;                  
+                }
+
+                .git-container img{
+                    width: 20px;
+                    height: 20px;
                 }
             `}</style>
         </div>
