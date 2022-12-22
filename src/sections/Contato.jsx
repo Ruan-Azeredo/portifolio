@@ -1,5 +1,5 @@
-import CardContComponent from "./CardContComponent";
-import Title from "./Title";
+import CardContComponent from "../CardContComponent";
+import Title from "../Title";
 
 export default function Contato() {
     return (
