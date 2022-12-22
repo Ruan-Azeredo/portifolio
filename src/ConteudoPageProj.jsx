@@ -5,7 +5,7 @@ export default function ConteudoPageProj(props) {
     const txt = props.txt
 
     var flexDirection = null
-    if (props.index == 0) { flexDirection = 'flex-row-reverse' } else { flexDirection = 'flex-row' }
+    if (props.index % 2 == 0) { flexDirection = 'flex-row-reverse' } else { flexDirection = 'flex-row' }
 
     return (
         <div className={`conteudo-container ${flexDirection}`}>
