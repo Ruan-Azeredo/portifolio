@@ -1,24 +1,14 @@
 import ConteudoPageProj from "./ConteudoPageProj"
 
-export default function PageProjetoLayout() {
-    const frontBack = true
-    const title = 'MyBooks'
-    const description = 'Este projeto consiste em uma aplicação onde o usuario pode cadastrar seus livros e resenhas do mesmo, para que assim tenha um lugar organizado e intuitivo para deixar suas reflexões sobre os livros lidos. O MyBooks foi desenvolvido com o Front-end e o Back-end separados.'
-    const link = 'github.com/Ruan-Azeredo/MyBooks'
-    const mainImg = 'telamybooks.png'
+export default function PageProjetoLayout(props) {
+    const frontBack = props.frontBack
+    const title = props.title
+    const description = props.description
+    const link = props.link
+    const mainImg = props.mainImg
+    const type = props.type
+    const conteudo = props.conteudo
 
-    const conteudo = [
-        {
-            img: 'telamybooks.png',
-            txt: 'O Front deste projeto foi desenvolvido com o Next, que é um Framework que funciona utilizando a biblioteca React, e que permite uma renderização Server Side. Para estilização, foi utilizado o Framework Tailwind CSS. Ainda no projeto em Next foram adicionadas outras dependencias para gereciamento de cookies, autenticação com a firebase e comunicação com a API do Back-end.'
-        },
-        {
-            img: 'telacrud.png',
-            txt: 'O Fdicionadas outras dependencias para gereciamento de cookies, autenticação com a firebase e comunicação com a API do Back-end.'
-        }
-    ]
-
-    const type = 'front'
     var tag = null
     type == 'front' ? tag = 'FRONT-END' : tag = 'BACK-END'
 
@@ -51,7 +41,7 @@ export default function PageProjetoLayout() {
             </div>
             {conteudo.map((resp, index) => (
                 <ConteudoPageProj txt={resp.txt} index={index}>
-                    <img src={resp.img} className="w-[300px]" />
+                    <img src={resp.img} className="w-[300px] rounded-md" />
                 </ConteudoPageProj>
             ))}
 
