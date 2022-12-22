@@ -127,6 +127,27 @@ export default function PageProjetoLayout() {
                     width: 20px;
                     height: 20px;
                 }
+                
+                .tag-type{
+                    font-family: 'Inter';
+                    font-style: normal;
+                    font-weight: 400;
+                    font-size: 24px;
+                    color: #FFFFFF;
+                    margin: 40px 50px 0 50px;
+                    position: relative;
+                    top: 20px;
+                    display: flex;
+                    flex-direction: column;
+                    width: fit-content;
+                    align-items: center;
+                }
+
+                .tag-type .line-gradient{
+                    width: 100px;
+                    height: 3px;
+                    background: linear-gradient(to right, var(--azulescuro), var(--azulclaro));
+                }
             `}</style>
         </div>
     )
