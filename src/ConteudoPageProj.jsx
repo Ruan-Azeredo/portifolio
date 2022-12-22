@@ -19,11 +19,12 @@ export default function ConteudoPageProj(props) {
             <style jsx>{`
                 .conteudo-container{
                     display: flex;
+                    margin: 60px 50px;
                 }
 
                 .conteudo-container .txt, .conteudo-container .card{
                     width: 50%;
-                    margin: 0 30px 0 50px;
+                    margin: 0 30px;
                     display: flex;
                     justify-content: center;
                     align-items: center;
