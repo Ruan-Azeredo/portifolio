@@ -99,6 +99,10 @@ export default function PageProjetoLayout() {
                     justify-content: space-around;
                 }
 
+                .header-content .right-side img{
+                    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.25);
+                }
+
                 .header-content .description{
                     font-family: 'Inter';
                     font-style: normal;
