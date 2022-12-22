@@ -38,7 +38,9 @@ export default function PageProjetoLayout() {
                 <div>{tag}</div>
                 <div className="line-gradient"></div>
             </div>
-            <ConteudoPageProj/>
+            <ConteudoPageProj>
+                <img src='telamybooks.png' className="w-[300px]" />
+            </ConteudoPageProj>
 
             <style jsx>{`
                 .nav{
