@@ -1,5 +1,5 @@
-import CardComponent from "./CardComponent";
-import Title from "./Title";
+import CardComponent from "../components/CardComponent";
+import Title from "../components/Title";
 
 export default function Trajetoria() {
     return (

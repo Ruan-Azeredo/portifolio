@@ -1,11 +1,11 @@
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
-import './App.css';
-import './AboutMe.css';
-import './Title.css';
-import './Projetos.css'
-import './Trajetoria.css'
-import './Contato.css'
-import './Footer.css'
+import './style/App.css';
+import './style/AboutMe.css';
+import './style/Title.css';
+import './style/Projetos.css'
+import './style/Trajetoria.css'
+import './style/Contato.css'
+import './style/Footer.css'
 import CardBlack from './components/CardBlack';
 import Home from './Home';
 import PageProjetoLayout from './PageProjetoLayout';

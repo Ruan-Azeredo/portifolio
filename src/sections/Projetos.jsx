@@ -1,5 +1,5 @@
-import ProjetoCard from "./ProjetoCard";
-import Title from "./Title";
+import ProjetoCard from "../components/ProjetoCard";
+import Title from "../components/Title";
 
 export default function Projetos() {
     return (

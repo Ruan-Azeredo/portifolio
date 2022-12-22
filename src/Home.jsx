@@ -1,9 +1,9 @@
-import MainCard from './MainCard';
-import AboutMe from './AboutMe';
-import Projetos from './Projetos';
-import Trajetoria from './Trajetoria';
+import MainCard from './sections/MainCard';
+import AboutMe from './sections/AboutMe';
+import Projetos from './sections/Projetos';
+import Trajetoria from './sections/Trajetoria';
 import Contato from './sections/Contato';
-import Footer from './Footer';
+import Footer from './sections/Footer';
 
 export default function Home() {
     return (

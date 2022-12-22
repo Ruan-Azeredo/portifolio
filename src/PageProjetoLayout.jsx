@@ -1,4 +1,4 @@
-import ConteudoPageProj from "./ConteudoPageProj"
+import ConteudoPageProj from "./components/ConteudoPageProj"
 
 export default function PageProjetoLayout(props) {
     const frontBack = props.frontBack
