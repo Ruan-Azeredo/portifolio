@@ -1,9 +1,15 @@
+import ConteudoPageProj from "./ConteudoPageProj"
+
 export default function PageProjetoLayout() {
     const frontBack = true
     const title = 'MyBooks'
     const description = 'Este projeto consiste em uma aplicação onde o usuario pode cadastrar seus livros e resenhas do mesmo, para que assim tenha um lugar organizado e intuitivo para deixar suas reflexões sobre os livros lidos. O MyBooks foi desenvolvido com o Front-end e o Back-end separados.'
     const link = 'github.com/Ruan-Azeredo/MyBooks'
     const mainImg = 'telamybooks.png'
+
+    const type = 'front'
+    var tag = null
+    type == 'front' ? tag = 'FRONT-END' : tag = 'BACK-END'
 
     return (
         <div>
@@ -28,6 +34,12 @@ export default function PageProjetoLayout() {
                     </div>
                 </div>
             </div>
+            <div className="tag-type">
+                <div>{tag}</div>
+                <div className="line-gradient"></div>
+            </div>
+            <ConteudoPageProj/>
+
             <style jsx>{`
                 .nav{
                     display: flex;
