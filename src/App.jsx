@@ -6,7 +6,6 @@ import './style/Projetos.css'
 import './style/Trajetoria.css'
 import './style/Contato.css'
 import './style/Footer.css'
-import CardBlack from './components/CardBlack';
 import Home from './Home';
 import PageProjetoLayout from './PageProjetoLayout';
 
