@@ -20,7 +20,7 @@ export default function PageProjetoLayout() {
                         <div className="description">{description}</div>
                         <div className="git-container">
                             <img src="github-icon.png"/>
-                            <div>{link}</div>
+                            <a  href={'https://' + link}>{link}</a>
                         </div>
                     </div>
                     <div className="right-side">
@@ -69,7 +69,7 @@ export default function PageProjetoLayout() {
                     width: 50%;
                     display: flex;
                     flex-direction: column;
-                    justify-content: space-around
+                    justify-content: space-around;
                 }
 
                 .header-content .description{
