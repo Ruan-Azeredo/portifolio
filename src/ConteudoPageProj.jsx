@@ -2,12 +2,13 @@ import CardBlack from "./CardBlack";
 
 export default function ConteudoPageProj(props) {
 
-    const txt = 'O Front deste projeto foi desenvolvido com o Next, que é um Framework que funciona utilizando a biblioteca React, e que permite uma renderização Server Side. Para estilização, foi utilizado o Framework Tailwind CSS. Ainda no projeto em Next foram adicionadas outras dependencias para gereciamento de cookies, autenticação com a firebase e comunicação com a API do Back-end.'
+    const txt = props.txt
 
-    const flexDirection = 'row-reverse'
+    var flexDirection = null
+    if (props.index == 0) { flexDirection = 'flex-row-reverse' } else { flexDirection = 'flex-row' }
 
     return (
-        <div className="conteudo-container">
+        <div className={`conteudo-container ${flexDirection}`}>
             <div className="card">
                 <CardBlack>
                     {props.children}
@@ -18,7 +19,6 @@ export default function ConteudoPageProj(props) {
             <style jsx>{`
                 .conteudo-container{
                     display: flex;
-                    flex-direction: ${flexDirection}
                 }
 
                 .conteudo-container .txt, .conteudo-container .card{
