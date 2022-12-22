@@ -28,6 +28,29 @@ export default function PageProjetoLayout() {
                     </div>
                 </div>
             </div>
+            <style jsx>{`
+                .nav{
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: flex-end;
+                    padding: 15px 0                    
+                }
+
+                .nav div{
+                    margin: 0 40px;
+                    font-family: 'Inter';
+                    font-style: normal;
+                    font-weight: 400;
+                    font-size: 20px;
+                    color: #E7F6F2;
+                }
+
+                .nav div:hover{
+                    color: #41ABCC;
+                    cursor: pointer
+                }
+
+            `}</style>
         </div>
     )
 }
