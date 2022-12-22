@@ -41,7 +41,7 @@ export default function PageProjetoLayout() {
                     font-family: 'Inter';
                     font-style: normal;
                     font-weight: 400;
-                    font-size: 20px;
+                    font-size: 16px;
                     color: #E7F6F2;
                 }
 
