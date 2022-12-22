@@ -50,6 +50,16 @@ export default function PageProjetoLayout() {
                     cursor: pointer
                 }
 
+                .header .title-project{
+                    font-family: 'Inter';
+                    font-style: normal;
+                    font-weight: 500;
+                    font-size: 36px;
+                    color: white;
+                    display: flex;
+                    justify-content: center;
+                    margin: 40px 0
+                }
             `}</style>
         </div>
     )
