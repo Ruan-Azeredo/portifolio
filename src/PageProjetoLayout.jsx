@@ -1,4 +1,5 @@
 import { useState } from "react"
+import { Link } from "react-router-dom"
 import ConteudoPageProj from "./components/ConteudoPageProj"
 import { Arrow } from "./icons/Arrow"
 
@@ -33,7 +34,7 @@ export default function PageProjetoLayout(props) {
             {frontAndBack ? (
                 <div className="nav">
                     <div className="container-with-arrow">
-                        <button><Arrow/></button>
+                        <Link to='/'><Arrow/></Link>
                         <div className="nav-container">
                             <button onClick={() => HandleSetDisplay('front')}>FRONT-END</button>
                             <button onClick={() => HandleSetDisplay('back')}>BACK-END</button>
