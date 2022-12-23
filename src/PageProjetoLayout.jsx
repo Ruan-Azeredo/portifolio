@@ -5,15 +5,26 @@ export default function PageProjetoLayout(props) {
     const frontAndBack = props.frontBack
     const title = props.title
     const description = props.description
-    const link = props.link
+    const linkFront = props.linkFront
+    const linkBack = props.linkBack
     const mainImg = props.mainImg
     const type = props.type
     const conteudo = props.conteudo
 
+    var link = null
+    if (linkFront){link = linkFront} else {link = linkBack}
+
     const [display, setDisplay] = useState(['', 'hidden'])
+    const [github, setGithub] = useState(link)
 
     const HandleSetDisplay = (value) => {
-        value == 'front' ? setDisplay(['', 'hidden']) : setDisplay(['hidden', ''])
+        if(value == 'front') {
+            setDisplay(['', 'hidden'])
+            setGithub(linkFront)
+        } else {
+            setDisplay(['hidden', ''])
+            setGithub(linkBack)
+        }
     }
 
     return (
@@ -34,7 +45,7 @@ export default function PageProjetoLayout(props) {
                         <div className="description">{description}</div>
                         <div className="git-container">
                             <img src="github-icon.png"/>
-                            <a  href={'https://' + link}>{link}</a>
+                            <a  href={'https://' + github}>{github}</a>
                         </div>
                     </div>
                     <div className="right-side">
