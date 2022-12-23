@@ -83,7 +83,8 @@ export default function PageProjetoLayout(props) {
             <style jsx>{`
                 .nav{
                     position: sticky;
-                    top: 0
+                    top: 0;
+                    z-index: 10;
                 }
 
                 .nav .nav-container{
