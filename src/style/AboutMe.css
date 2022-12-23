@@ -118,6 +118,7 @@
 .inside-function-ruan{
     padding: 0 20px;
     color: white;
+    line-height: 22px;
 }
 
 .gradient-bar-screen{
@@ -174,7 +175,7 @@
     text-align: center;
     display: flex;
     margin: 0 auto;
-    width: 70px;
+    width: 80px;
     padding: 4px 8px;
     border-radius: 5px;
     font-size: 12px;
