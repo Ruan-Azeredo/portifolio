@@ -1,7 +1,7 @@
 import ConteudoPageProj from "./components/ConteudoPageProj"
 
 export default function PageProjetoLayout(props) {
-    const frontBack = props.frontBack
+    const frontAndBack = props.frontBack
     const title = props.title
     const description = props.description
     const link = props.link
@@ -9,12 +9,9 @@ export default function PageProjetoLayout(props) {
     const type = props.type
     const conteudo = props.conteudo
 
-    var tag = null
-    type == 'front' ? tag = 'FRONT-END' : tag = 'BACK-END'
-
     return (
         <div>
-            {frontBack ? (
+            {frontAndBack ? (
                 <div className="nav">
                     <div>FRONT-END</div>
                     <div>BACK-END</div>
@@ -35,15 +32,32 @@ export default function PageProjetoLayout(props) {
                     </div>
                 </div>
             </div>
-            <div className="tag-type">
-                <div>{tag}</div>
-                <div className="line-gradient"></div>
-            </div>
-            {conteudo.map((resp, index) => (
-                <ConteudoPageProj txt={resp.txt} index={index}>
-                    <img src={resp.img} className="w-[300px] rounded-md" />
-                </ConteudoPageProj>
-            ))}
+            {type != 'back' ? (
+                <div className="front-container">
+                    <div className="tag-type">
+                        <div>FRONT-END</div>
+                        <div className="line-gradient"></div>
+                    </div>
+                    {conteudo.front.map((resp, index) => (
+                        <ConteudoPageProj txt={resp.txt} index={index}>
+                            <img src={resp.img} className="w-[300px] rounded-md" />
+                        </ConteudoPageProj>
+                    ))}
+                </div>
+            ) : null}
+            {type != 'front' ? (
+                <div className="back-container">
+                    <div className="tag-type">
+                        <div>BACK-END</div>
+                        <div className="line-gradient"></div>
+                    </div>
+                    {conteudo.back.map((resp, index) => (
+                        <ConteudoPageProj txt={resp.txt} index={index}>
+                            <img src={resp.img} className="w-[300px] rounded-md" />
+                        </ConteudoPageProj>
+                    ))}
+                </div>
+            ) : null}
 
             <style jsx>{`
                 .nav{
