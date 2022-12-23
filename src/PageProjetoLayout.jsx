@@ -20,8 +20,11 @@ export default function PageProjetoLayout(props) {
         <div>
             {frontAndBack ? (
                 <div className="nav">
-                    <button onClick={() => HandleSetDisplay('front')}>FRONT-END</button>
-                    <button onClick={() => HandleSetDisplay('back')}>BACK-END</button>
+                    <div className="nav-container">
+                        <button onClick={() => HandleSetDisplay('front')}>FRONT-END</button>
+                        <button onClick={() => HandleSetDisplay('back')}>BACK-END</button>
+                    </div>
+                    <div className="line-gradient"></div>
                 </div>
             ) : null}
             <div className="header">
@@ -68,13 +71,19 @@ export default function PageProjetoLayout(props) {
 
             <style jsx>{`
                 .nav{
+                    position: sticky;
+                    top: 0
+                }
+
+                .nav .nav-container{
                     display: flex;
                     flex-direction: row;
                     justify-content: flex-end;
-                    padding: 15px 0                    
+                    padding: 15px 0;
+                    background-color: #2C3333;                  
                 }
 
-                .nav button{
+                .nav .nav-container button{
                     margin: 0 40px;
                     font-family: 'Inter';
                     font-style: normal;
@@ -83,9 +92,14 @@ export default function PageProjetoLayout(props) {
                     color: #E7F6F2;
                 }
 
-                .nav button:hover{
+                .nav .nav-container button:hover{
                     color: #41ABCC;
                     cursor: pointer
+                }
+
+                .nav  .line-gradient{
+                    height: 3px;
+                    background: linear-gradient(to right, var(--azulescuro), var(--azulclaro));
                 }
 
                 .header .title-project{
