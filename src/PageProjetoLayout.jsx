@@ -1,5 +1,6 @@
 import { useState } from "react"
 import ConteudoPageProj from "./components/ConteudoPageProj"
+import { Arrow } from "./icons/Arrow"
 
 export default function PageProjetoLayout(props) {
     const frontAndBack = props.frontBack
@@ -31,9 +32,12 @@ export default function PageProjetoLayout(props) {
         <div>
             {frontAndBack ? (
                 <div className="nav">
-                    <div className="nav-container">
-                        <button onClick={() => HandleSetDisplay('front')}>FRONT-END</button>
-                        <button onClick={() => HandleSetDisplay('back')}>BACK-END</button>
+                    <div className="container-with-arrow">
+                        <button><Arrow/></button>
+                        <div className="nav-container">
+                            <button onClick={() => HandleSetDisplay('front')}>FRONT-END</button>
+                            <button onClick={() => HandleSetDisplay('back')}>BACK-END</button>
+                        </div>
                     </div>
                     <div className="line-gradient"></div>
                 </div>
@@ -83,6 +87,7 @@ export default function PageProjetoLayout(props) {
             <style jsx>{`
                 .nav{
                     position: sticky;
+                    background-color: #2C3333;   
                     top: 0;
                     z-index: 10;
                 }
@@ -91,8 +96,7 @@ export default function PageProjetoLayout(props) {
                     display: flex;
                     flex-direction: row;
                     justify-content: flex-end;
-                    padding: 15px 0;
-                    background-color: #2C3333;                  
+                    padding: 15px 0;               
                 }
 
                 .nav .nav-container button{
@@ -112,6 +116,14 @@ export default function PageProjetoLayout(props) {
                 .nav  .line-gradient{
                     height: 3px;
                     background: linear-gradient(to right, var(--azulescuro), var(--azulclaro));
+                }
+
+                .nav .container-with-arrow{
+                    display: flex;
+                    flex-direction: row;
+                    align-items: center;
+                    justify-content: space-between;
+                    padding-left: 30px
                 }
 
                 .header .title-project{
