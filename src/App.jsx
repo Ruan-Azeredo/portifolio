@@ -19,7 +19,8 @@ function App() {
           frontBack={true}
           title='MyBooks'
           description='Este projeto consiste em uma aplicação onde o usuario pode cadastrar seus livros e resenhas do mesmo, para que assim tenha um lugar organizado e intuitivo para deixar suas reflexões sobre os livros lidos. O MyBooks foi desenvolvido com o Front-end e o Back-end separados.'
-          link='github.com/Ruan-Azeredo/MyBooks'
+          linkFront='github.com/Ruan-Azeredo/MyBooks'
+          linkBack='github.com/Ruan-Azeredo/MyBooks-Backend'
           mainImg='telamybooks.png'
           type='frontAndBack'
           conteudo={{
