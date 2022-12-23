@@ -74,7 +74,7 @@ export default function PageProjetoLayout(props) {
                     padding: 15px 0                    
                 }
 
-                .nav div{
+                .nav button{
                     margin: 0 40px;
                     font-family: 'Inter';
                     font-style: normal;
@@ -83,7 +83,7 @@ export default function PageProjetoLayout(props) {
                     color: #E7F6F2;
                 }
 
-                .nav div:hover{
+                .nav button:hover{
                     color: #41ABCC;
                     cursor: pointer
                 }
