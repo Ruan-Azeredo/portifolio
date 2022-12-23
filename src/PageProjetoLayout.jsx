@@ -1,3 +1,4 @@
+import { useState } from "react"
 import ConteudoPageProj from "./components/ConteudoPageProj"
 
 export default function PageProjetoLayout(props) {
@@ -9,12 +10,18 @@ export default function PageProjetoLayout(props) {
     const type = props.type
     const conteudo = props.conteudo
 
+    const [display, setDisplay] = useState(['', 'hidden'])
+
+    const HandleSetDisplay = (value) => {
+        value == 'front' ? setDisplay(['', 'hidden']) : setDisplay(['hidden', ''])
+    }
+
     return (
         <div>
             {frontAndBack ? (
                 <div className="nav">
-                    <div>FRONT-END</div>
-                    <div>BACK-END</div>
+                    <button onClick={() => HandleSetDisplay('front')}>FRONT-END</button>
+                    <button onClick={() => HandleSetDisplay('back')}>BACK-END</button>
                 </div>
             ) : null}
             <div className="header">
@@ -33,7 +40,7 @@ export default function PageProjetoLayout(props) {
                 </div>
             </div>
             {type != 'back' ? (
-                <div className="front-container">
+                <div className={`front-container ${display[0]}`}>
                     <div className="tag-type">
                         <div>FRONT-END</div>
                         <div className="line-gradient"></div>
@@ -46,7 +53,7 @@ export default function PageProjetoLayout(props) {
                 </div>
             ) : null}
             {type != 'front' ? (
-                <div className="back-container">
+                <div className={`back-container ${display[1]}`}>
                     <div className="tag-type">
                         <div>BACK-END</div>
                         <div className="line-gradient"></div>
