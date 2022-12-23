@@ -1,23 +1,46 @@
+import { useState } from "react"
+import { Link } from "react-router-dom"
 import ConteudoPageProj from "./components/ConteudoPageProj"
+import { Arrow } from "./icons/Arrow"
 
 export default function PageProjetoLayout(props) {
-    const frontBack = props.frontBack
+    const frontAndBack = props.frontBack
     const title = props.title
     const description = props.description
-    const link = props.link
+    const linkFront = props.linkFront
+    const linkBack = props.linkBack
     const mainImg = props.mainImg
     const type = props.type
     const conteudo = props.conteudo
 
-    var tag = null
-    type == 'front' ? tag = 'FRONT-END' : tag = 'BACK-END'
+    var link = null
+    if (linkFront){link = linkFront} else {link = linkBack}
+
+    const [display, setDisplay] = useState(['', 'hidden'])
+    const [github, setGithub] = useState(link)
+
+    const HandleSetDisplay = (value) => {
+        if(value == 'front') {
+            setDisplay(['', 'hidden'])
+            setGithub(linkFront)
+        } else {
+            setDisplay(['hidden', ''])
+            setGithub(linkBack)
+        }
+    }
 
     return (
         <div>
-            {frontBack ? (
+            {frontAndBack ? (
                 <div className="nav">
-                    <div>FRONT-END</div>
-                    <div>BACK-END</div>
+                    <div className="container-with-arrow">
+                        <Link to='/'><Arrow/></Link>
+                        <div className="nav-container">
+                            <button onClick={() => HandleSetDisplay('front')}>FRONT-END</button>
+                            <button onClick={() => HandleSetDisplay('back')}>BACK-END</button>
+                        </div>
+                    </div>
+                    <div className="line-gradient"></div>
                 </div>
             ) : null}
             <div className="header">
@@ -27,7 +50,7 @@ export default function PageProjetoLayout(props) {
                         <div className="description">{description}</div>
                         <div className="git-container">
                             <img src="github-icon.png"/>
-                            <a  href={'https://' + link}>{link}</a>
+                            <a  href={'https://' + github}>{github}</a>
                         </div>
                     </div>
                     <div className="right-side">
@@ -35,25 +58,49 @@ export default function PageProjetoLayout(props) {
                     </div>
                 </div>
             </div>
-            <div className="tag-type">
-                <div>{tag}</div>
-                <div className="line-gradient"></div>
-            </div>
-            {conteudo.map((resp, index) => (
-                <ConteudoPageProj txt={resp.txt} index={index}>
-                    <img src={resp.img} className="w-[300px] rounded-md" />
-                </ConteudoPageProj>
-            ))}
+            {type != 'back' ? (
+                <div className={`front-container ${display[0]}`}>
+                    <div className="tag-type">
+                        <div>FRONT-END</div>
+                        <div className="line-gradient"></div>
+                    </div>
+                    {conteudo.front.map((resp, index) => (
+                        <ConteudoPageProj txt={resp.txt} index={index}>
+                            <img src={resp.img} className="w-[300px] rounded-md" />
+                        </ConteudoPageProj>
+                    ))}
+                </div>
+            ) : null}
+            {type != 'front' ? (
+                <div className={`back-container ${display[1]}`}>
+                    <div className="tag-type">
+                        <div>BACK-END</div>
+                        <div className="line-gradient"></div>
+                    </div>
+                    {conteudo.back.map((resp, index) => (
+                        <ConteudoPageProj txt={resp.txt} index={index}>
+                            <img src={resp.img} className="w-[300px] rounded-md" />
+                        </ConteudoPageProj>
+                    ))}
+                </div>
+            ) : null}
 
             <style jsx>{`
                 .nav{
+                    position: sticky;
+                    background-color: #2C3333;   
+                    top: 0;
+                    z-index: 10;
+                }
+
+                .nav .nav-container{
                     display: flex;
                     flex-direction: row;
                     justify-content: flex-end;
-                    padding: 15px 0                    
+                    padding: 15px 0;               
                 }
 
-                .nav div{
+                .nav .nav-container button{
                     margin: 0 40px;
                     font-family: 'Inter';
                     font-style: normal;
@@ -62,9 +109,22 @@ export default function PageProjetoLayout(props) {
                     color: #E7F6F2;
                 }
 
-                .nav div:hover{
+                .nav .nav-container button:hover{
                     color: #41ABCC;
                     cursor: pointer
+                }
+
+                .nav  .line-gradient{
+                    height: 3px;
+                    background: linear-gradient(to right, var(--azulescuro), var(--azulclaro));
+                }
+
+                .nav .container-with-arrow{
+                    display: flex;
+                    flex-direction: row;
+                    align-items: center;
+                    justify-content: space-between;
+                    padding-left: 30px
                 }
 
                 .header .title-project{
