@@ -52,7 +52,7 @@ function App() {
                 img: 'arqbackmybooks.png',
                 txt: 'A API foi arquitetada da seguinte forma, com um config, que faz a comunicação com o o container que roda o PostgreSQL, as migrations e os models possuem o as estruturas das tabelas dos bancos de dados, que são as tabelas de usuários, autores, livros e resenhas respectivamente. A pasta public comporta as imagens que são arquivadas atravez do Multer.'
               }, {
-                img: 'controllerDeleteBooks.png',
+                img: 'controllerDeleteBook.png',
                 txt: 'Os Controllers são onde são definidas efetivamente as rotas de API, aqui temos um exemplo, da rota de delete dos BookController, que alem de apagar o livro, precisa apagar a imagem que está salva em /public.'
               }
             ]
