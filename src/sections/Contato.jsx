@@ -5,7 +5,7 @@ export default function Contato() {
         <div className="contato-container"><a name='contato'></a>
             <div className="border-gradient-cont">
                 <div className="inside-gradient-cont">
-                    <div className="main-card-contato bg-black">
+                    <div className="main-card-contato backgr-black">
                         <div className="title-contato">Contato</div>
                         <div className="text-contato">Se gostou do meu trabalho, entre  em contato comigo, estou sempre em busca de veloução e aprendizado</div>
                     </div>

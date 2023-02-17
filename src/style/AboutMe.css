@@ -22,7 +22,7 @@
     height: 300px;
 }
 
-.bg-black{
+.backgr-black{
     top: -15px;
     left: -15px;
     background-color: var(--black);
@@ -312,7 +312,7 @@
         margin: 5px 0;
     }
 
-    .bg-black{
+    .backgr-black{
         top: -10px;
         left: -10px;
     }
