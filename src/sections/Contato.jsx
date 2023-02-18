@@ -7,7 +7,7 @@ export default function Contato() {
                 <div className="inside-gradient-cont">
                     <div className="main-card-contato backgr-black">
                         <div className="title-contato">Contato</div>
-                        <div className="text-contato">Se gostou do meu trabalho, entre  em contato comigo, estou sempre em busca de veloução e aprendizado</div>
+                        <div className="text-contato">Se gostou do meu trabalho, entre  em contato comigo, estou sempre em busca de evolução e aprendizado</div>
                     </div>
                     <div className="contatos-container">
                         <CardContComponent icon='whatsapp-icon.png' name='WhatsApp' route='+55 (27) 99602-7180' link='https://api.whatsapp.com/send?phone=5527996027180&text=Ola%2C%20vim%20do%20seu%20Postifolio'/>
