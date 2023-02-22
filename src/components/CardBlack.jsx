@@ -15,7 +15,7 @@ export default function CardBlack(props) {
 
                     .card-backgr-black{
                         background-color: #202020;
-                        padding: 40px;
+                        padding: 20px;
                         width: fit-content;
                         border-radius: 10px;
                         position: relative;
