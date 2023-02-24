@@ -185,8 +185,8 @@ export default function PageProjetoLayout(props) {
                     font-family: 'Inter';
                     font-style: normal;
                     font-weight: 400;
-                    font-size: 18px;
-                    line-height: 26px;
+                    font-size: 16px;
+                    line-height: 23px;
                     text-align: justify;
                     color: #FFFFFF;
                 }
@@ -229,6 +229,26 @@ export default function PageProjetoLayout(props) {
                     width: 100px;
                     height: 3px;
                     background: linear-gradient(to right, var(--azulescuro), var(--azulclaro));
+                }
+
+                @media (max-width: 550px){
+                    .header .header-content{
+                        flex-direction: column-reverse;
+                    }
+
+                    .header .header-content .left-side{
+                        width: 100%;
+                        padding: 20px 25px;
+                    }
+
+                    .header-content .git-container{
+                        margin-top: 30px;
+                         
+                    }
+
+                    .right-side{
+                        padding: 25px;
+                    }
                 }
             `}</style>
         </div>
