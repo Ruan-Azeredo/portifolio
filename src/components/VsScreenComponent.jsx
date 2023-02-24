@@ -4,7 +4,7 @@ export default function VsScreenComponent() {
     return (
         <div>
             <div className="border-gradient z-10"><div className="inside-gradient">
-                <div className="backgr-black background-black-screen">
+                <div className="backgr-black background-black-screen border-grayy border-2">
                     <div className="navbar-screen">
                         <div className="options-screen">
                             <div className="circle-screen red-c"></div>
@@ -19,7 +19,7 @@ export default function VsScreenComponent() {
                         <div className="description-screen-container">
                             <p className="ruan-function">Ruan() &#123;</p>
                             <div className="inside-function">
-                                <div className="gradient-bar-screen"></div>
+                                <div className="gradient-bar-screen bg-gradient-to-b from-azulescuro to-azulclaro h-auto w-2"></div>
                                 <p className="inside-function-ruan">{sobreMim}</p>
                             </div>
                             <p className="ruan-close-function">&#125;</p>
