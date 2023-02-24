@@ -1,15 +1,14 @@
 :root{
-    --black: #202020;
-    --gray: #3d3d3d;
+    --black: #161818;
+    --grayy: #3d3d3d;
     --cinzaclaro: #909090;
     --azulescuro: #152DFF;
     --azulclaro: #41ABCC;
-    --background: #2C3333;
+    --background: #161818;
 }
 
 .contato-container{
     display: flex;
-    margin-top: 100px;
     position: relative;
 }
 
@@ -50,7 +49,7 @@
     margin-right: 15px;
 }
 
-.minicard-contato, .minicard-contato-gray{
+.minicard-contato, .minicard-contato-grayy{
     background-color: var(--black);
     width: 320px;
     height: 120px;
@@ -72,11 +71,11 @@ a:link{
     background-color: var(--black);
 }
 
-.minicard-contato-gray{
+.minicard-contato-grayy{
     background-color: var(--cinzaclaro);
 }
 
-.minicard-contato:hover, .minicard-contato-gray:hover{
+.minicard-contato:hover, .minicard-contato-grayy:hover{
     transform: translateX(-40px);
 }
 
@@ -106,10 +105,10 @@ a:link{
     font-family: 'Inter';
     font-weight: 400;
     font-size: 16px;
-    line-height: 20px;
+    line-height: 24px;
     text-align: center;
     margin: 0 20px;
-    color: var(--cinzaclaro);
+    color:white;
 }
 
 @media (max-width: 550px){
@@ -149,7 +148,7 @@ a:link{
         position: relative;
     }
 
-    .minicard-contato, .minicard-contato-gray{
+    .minicard-contato, .minicard-contato-grayy{
         width: 280px;
         height: 60px;
         font-size: 14px;
