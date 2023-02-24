@@ -1,6 +1,6 @@
 export default function CurriculoComponent() {
     return (
-        <div className=" backgr-black black-card-curriculo">
+        <div className=" backgr-black black-card-curriculo border-grayy border-2">
             <div className="border-gradient curriculo-border">
                 <div className="inside-gradient bkg-black">
                     <img src="A4-1.png" alt="" className="curriculo-img"/>
