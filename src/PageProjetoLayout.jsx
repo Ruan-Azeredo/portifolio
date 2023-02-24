@@ -4,14 +4,16 @@ import ConteudoPageProj from "./components/ConteudoPageProj"
 import { Arrow } from "./icons/Arrow"
 
 export default function PageProjetoLayout(props) {
-    const frontAndBack = props.frontBack
-    const title = props.title
-    const description = props.description
-    const linkFront = props.linkFront
-    const linkBack = props.linkBack
-    const mainImg = props.mainImg
-    const type = props.type
-    const conteudo = props.conteudo
+    const infos = props.infos
+
+    const frontAndBack = infos.frontBack
+    const title = infos.title
+    const description = infos.description
+    const linkFront = infos.linkFront
+    const linkBack = infos.linkBack
+    const mainImg = infos.mainImg
+    const type = infos.type
+    const conteudo = infos.conteudo
 
     var link = null
     if (linkFront){link = linkFront} else {link = linkBack}
@@ -36,8 +38,8 @@ export default function PageProjetoLayout(props) {
                     <div className="container-with-arrow">
                         <Link to='/'><Arrow/></Link>
                         <div className="nav-container">
-                            <button onClick={() => HandleSetDisplay('front')}>FRONT-END</button>
-                            <button onClick={() => HandleSetDisplay('back')}>BACK-END</button>
+                            <button className="navbar-item" onClick={() => HandleSetDisplay('front')}>FRONT-END</button>
+                            <button className="navbar-item" onClick={() => HandleSetDisplay('back')}>BACK-END</button>
                         </div>
                     </div>
                     <div className="line-gradient"></div>
@@ -48,6 +50,18 @@ export default function PageProjetoLayout(props) {
                 <div className="header-content">
                     <div className="left-side">
                         <div className="description">{description}</div>
+                        <div className="flex gap-4 py-2">
+                            {infos.icons?.map(item => (
+                                <div key={item}>
+                                    <img className="h-8" src={item} alt="" />
+                                </div>
+                            ))}
+                        </div>
+                        <div className="flex gap-2 py-2">
+                            {infos.tags?.map(item => (
+                                <div key={item} className="bg-black text-white px-3 py-1 rounded-md">{item}</div>
+                            ))}
+                        </div>
                         <div className="git-container">
                             <img src="github-icon.png"/>
                             <a  href={'https://' + github}>{github}</a>
@@ -66,7 +80,7 @@ export default function PageProjetoLayout(props) {
                     </div>
                     {conteudo.front.map((resp, index) => (
                         <ConteudoPageProj txt={resp.txt} index={index}>
-                            <img src={resp.img} className="w-[300px] rounded-md" />
+                            <img src={resp.img} className="w-[450px] rounded-md" />
                         </ConteudoPageProj>
                     ))}
                 </div>
@@ -79,39 +93,43 @@ export default function PageProjetoLayout(props) {
                     </div>
                     {conteudo.back.map((resp, index) => (
                         <ConteudoPageProj txt={resp.txt} index={index}>
-                            <img src={resp.img} className="w-[300px] rounded-md" />
+                            <img src={resp.img} className="w-[450px] rounded-md" />
                         </ConteudoPageProj>
                     ))}
                 </div>
             ) : null}
 
             <style jsx>{`
-                .nav{
-                    position: sticky;
-                    background-color: #2C3333;   
-                    top: 0;
-                    z-index: 10;
-                }
-
-                .nav .nav-container{
+                .nav-container{
                     display: flex;
-                    flex-direction: row;
-                    justify-content: flex-end;
-                    padding: 15px 0;               
+                    gap: 40px;
+                    padding: 20px
                 }
 
-                .nav .nav-container button{
-                    margin: 0 40px;
-                    font-family: 'Inter';
+                .navbar-item{
+                    margin: 0 auto;
+                    font-family: 'Inter', sans-serif;
                     font-style: normal;
                     font-weight: 400;
-                    font-size: 16px;
-                    color: #E7F6F2;
+                    font-size: 15px;
+                    color: var(--white);
+                    display: flex;
+                    flex-direction: column;
                 }
 
-                .nav .nav-container button:hover{
-                    color: #41ABCC;
-                    cursor: pointer
+                .navbar-item::after{
+                    content: '';
+                    width: 0px;
+                    height: 3px;
+                    position: relative;
+                    left: 50%;
+                    transform: translateX(-50%);
+                    background: linear-gradient(to right, var(--azulescuro), var(--azulclaro));
+                    transition: width 0.3s;
+                }
+
+                .navbar-item:hover::after{
+                    width: 50px;
                 }
 
                 .nav  .line-gradient{
@@ -127,6 +145,15 @@ export default function PageProjetoLayout(props) {
                     padding-left: 30px
                 }
 
+                .header{
+                    font-family: 'Inter';
+                    font-style: normal;
+                    font-weight: 400;
+                    font-size: 16px;
+                    line-height: 19px;
+                    text-align: justify;
+                }
+
                 .header .title-project{
                     font-family: 'Inter';
                     font-style: normal;
@@ -135,7 +162,7 @@ export default function PageProjetoLayout(props) {
                     color: white;
                     display: flex;
                     justify-content: center;
-                    margin: 20px 0 50px 0;
+                    margin: 40px 0 50px 0;
                 }
                 .header .header-content{
                     display: flex;
@@ -147,24 +174,23 @@ export default function PageProjetoLayout(props) {
                     display: flex;
                     flex-direction: column;
                     justify-content: space-around;
-                }
-
-                .header-content .right-side img{
-                    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.25);
+                    padding: 40px 50px;
                 }
 
                 .header-content .description{
+                    align-items: center;
+                    justify-content: center;
                     font-family: 'Inter';
                     font-style: normal;
-                    font-weight: 500;
-                    font-size: 20px;
-                    line-height: 29px;
+                    font-weight: 400;
+                    font-size: 18px;
+                    line-height: 26px;
                     text-align: justify;
                     color: #FFFFFF;
-                    margin: 0 50px;
                 }
 
                 .header-content .git-container{
+                    margin-top: 60px;
                     display: flex;
                     flex-direction: row;
                     justify-content: center;
