@@ -20,14 +20,14 @@ export const projetos = [
         link: 'https://github.com/Ruan-Azeredo/Bootcamp-Next-e-diaristas'
     },
     {
-        id: 1,
+        id: 3,
         name: 'Crud',
         icons: ['react-icon.png', 'node-icon.png', 'tailwind-icon.png'],
         tags: ['lorem inpsum'],
         screen: 'telamybooks.png',
         description: 'Um CRUD, que é uma aplicação simples que permite adicionar, ver, editar e excluir informações. Neste projeto o CRUD trabalha com usuários, coletando seus nomes e emails, alem de gera um ID para cada. O Front-end deste projeto foi desenvolvido em React.js, e o Back-end em Node.js.',
         link: 'https://github.com/Ruan-Azeredo/crud-usuarios-React-'
-    }
+    },
 ]
 
 export const sobreMim = 'Ola, meu chamo Ruan, tenho 20 anos e estou trilhando este caminho de Desenvolvedor Web. Gosto muito de desenvolver interfaces Front-end, porem estou sempre aberto a desenvolver o Back-end de algumas aplicações, afinal, gosto de construir aplicações completas que possa ver funcionando no final. Sou um grande fã de JavaScript e gosto de desenvolver alguns designs também. Gosto de estar sempre aberto para novas tecnologias.'
