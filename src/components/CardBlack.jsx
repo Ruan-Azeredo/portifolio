@@ -15,12 +15,13 @@ export default function CardBlack(props) {
 
                     .card-backgr-black{
                         background-color: #161818;
-                        padding: 20px;
                         width: fit-content;
                         border-radius: 10px;
                         position: relative;
                         top: -10px;
-                        left: -10px;           
+                        left: -10px;
+                        padding: 0px;
+                        border: solid gray 2px          
                     }
 
                     .out-gradient{
