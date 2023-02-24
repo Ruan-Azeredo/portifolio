@@ -72,6 +72,8 @@ export default function PageProjetoLayout(props) {
                     </div>
                 </div>
             </div>
+            <div className='gradient grad-1'></div>
+            <div className='gradient grad-2'></div>
             {type != 'back' ? (
                 <div className={`front-container ${display[0]}`}>
                     <div className="tag-type">
