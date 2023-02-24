@@ -31,7 +31,7 @@ export default function CardComponent(props) {
 
             </div>
             <div className={`h-fit md:h-48 ${end} hidden md:grid`}>
-                <div className="bg-white px-3 py-1 rounded-lg w-fit">{infos.time}</div>
+                <div className="bg-white font-medium px-3 py-1 rounded-lg w-fit">{infos.time}</div>
             </div>
         </div>
     )
