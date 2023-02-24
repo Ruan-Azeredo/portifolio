@@ -14,6 +14,11 @@ export default function Home() {
             <Trajetoria />
             <Contato />
             <Footer />
+            <div className='gradient grad-1'></div>
+            <div className='gradient grad-2'></div>
+            <div className='gradient grad-3'></div>
+            <div className='gradient grad-4'></div>
+            <div className='gradient grad-5'></div>
         </div>
     )
 }
