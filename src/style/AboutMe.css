@@ -244,6 +244,8 @@
 
 .first-line img, .second-line img{
     object-fit: contain;
+    filter: saturate(0);
+    height: 60px;
 }
 
 .first-line img:hover, .second-line img:hover{
