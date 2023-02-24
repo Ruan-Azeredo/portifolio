@@ -14,7 +14,7 @@ export default function CardBlack(props) {
                     }
 
                     .card-backgr-black{
-                        background-color: #202020;
+                        background-color: #161818;
                         padding: 20px;
                         width: fit-content;
                         border-radius: 10px;
@@ -34,7 +34,7 @@ export default function CardBlack(props) {
                     }
 
                     .in-gradient{
-                        background: #2C3333;
+                        background: #161818;
                         width: fit-content;
                         border-radius: 10px;
                     }
