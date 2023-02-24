@@ -8,7 +8,7 @@ export default function ConteudoPageProj(props) {
     if (props.index % 2 == 0) { flexDirection = 'flex-row-reverse' } else { flexDirection = 'flex-row' }
 
     return (
-        <div className={`conteudo-container ${flexDirection}`}>
+        <div className={`conteudo-container ${flexDirection} text-gray-300`}>
             <div className="card">
                 <CardBlack>
                     {props.children}
@@ -34,7 +34,26 @@ export default function ConteudoPageProj(props) {
                     font-size: 16px;
                     line-height: 22px;
                     text-align: justify;
-                    color: white;
+                }
+
+                @media (max-width: 550px){
+                    .conteudo-container{
+                        flex-direction: column
+                    }
+
+                    .conteudo-container .txt, .conteudo-container .card{
+                        width: 100%;
+                        margin: 0;
+                    }
+
+                    .conteudo-container{
+                        margin: 60px 25px;
+                    }
+
+                    .out-gradient{
+                        margin-bottom: 40px;
+                        margin-top: 20px;
+                    }
                 }
             `}</style>
         </div>
