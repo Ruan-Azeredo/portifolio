@@ -59,7 +59,7 @@ export default function PageProjetoLayout(props) {
                         </div>
                         <div className="flex gap-2 py-2">
                             {infos.tags?.map(item => (
-                                <div key={item} className="bg-black text-white px-3 py-1 rounded-md">{item}</div>
+                                <div key={item} className="bg-gray-800 text-white px-3 py-1 rounded-md">{item}</div>
                             ))}
                         </div>
                         <div className="git-container">

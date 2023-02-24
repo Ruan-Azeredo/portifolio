@@ -19,7 +19,7 @@ export default function ProjetoCard(props) {
                 </div>
                 <div className="flex gap-2 py-2">
                     {infos.tags?.map(item => (
-                        <div key={item} className="bg-black px-3 py-1 rounded-md">{item}</div>
+                        <div key={item} className="bg-neutral-800 rounded-md px-3 py-1 group-hover:bg-gray-800">{item}</div>
                     ))}
                 </div>
                 <div className="flex gap-4">
