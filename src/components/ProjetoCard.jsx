@@ -1,3 +1,5 @@
+import { Eyeslash } from "../icons/Eyeslash"
+
 export default function ProjetoCard(props) {
     const infos = props.infos
 
@@ -23,9 +25,15 @@ export default function ProjetoCard(props) {
                     ))}
                 </div>
                 <div className="flex gap-4">
-                    <a href={infos.link} className="h-8 flex py-1 px-8 w-fit border-2 rounded-md">
-                        <img src="gen/github-icon.png" alt="" />
-                    </a>
+                    {infos.adapti == true ? (
+                        <a href={infos.link} className="h-8 flex py-1 px-8 w-fit border-2 border-gray-500 rounded-md">
+                            <Eyeslash/>
+                        </a>
+                    ) : (
+                        <a href={infos.link} className="h-8 flex py-1 px-8 w-fit border-2 rounded-md">
+                            <img src="gen/github-icon.png" alt="" />
+                        </a>
+                    )}
                     {infos.seeMore ? (
                         <a href={infos.seeMore} className="py-1 px-3 w-fit border-2 rounded-md text-sm">VER MAIS +</a>
                     ) : null}
