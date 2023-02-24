@@ -9,6 +9,7 @@ import './style/Footer.css'
 import Home from './Home';
 import PageProjetoLayout from './PageProjetoLayout';
 import { myBooks } from './data';
+import PageProjetos from './PageProjetos';
 
 function App() {
   return (
@@ -17,6 +18,8 @@ function App() {
         <Route path='/' element={<Home />} />
         
         <Route path='/MyBooks' element={<PageProjetoLayout infos={myBooks} />} />
+
+        <Route path='/projetos' element={<PageProjetos/>} />
       </Routes>   
     </Router>
   );
