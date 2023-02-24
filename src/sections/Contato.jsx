@@ -9,15 +9,15 @@ export default function Contato() {
                 <div className="text-contato w-[300px] md:w-[500px]">Se gostou do meu trabalho, entre  em contato comigo, estou sempre em busca de evolução e aprendizado</div>
                 <div className="flex flex-col md:flex-row my-10 gap-8 text-white">
                     <div className="bg-black py-4 px-4 border-grayy border-2 rounded-lg flex gap-4 items-center hover:bg-slate-800 group">
-                        <img className="h-10 w-10" src="174857.png" alt="" />
+                        <img className="h-10 w-10" src="gen/174857.png" alt="" />
                         <div>ruan-azeredo</div>
                     </div>
                     <div className="bg-black py-4 px-4 border-grayy border-2 rounded-lg flex gap-4 items-center hover:bg-slate-800 group">
-                        <img className="h-10 w-10" src="174879.png" alt="" />
+                        <img className="h-10 w-10" src="gen/174879.png" alt="" />
                         <div>+55 (27) 99602-7180</div>
                     </div>
                     <div className="bg-black py-4 px-4 border-grayy border-2 rounded-lg flex gap-4 items-center hover:bg-slate-800 group">
-                        <img className="h-10 w-10" src="281769.png" alt="" />
+                        <img className="h-10 w-10" src="gen/281769.png" alt="" />
                         <div>ruanazeredo@gmail.com</div>
                     </div>
                 </div>

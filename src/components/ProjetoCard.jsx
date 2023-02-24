@@ -13,7 +13,7 @@ export default function ProjetoCard(props) {
                 <div className="flex gap-4 py-2">
                     {infos.icons?.map(item => (
                         <div key={item}>
-                            <img className="h-8" src={item} alt="" />
+                            <img className="h-8" src={`gen/${item}`} alt="" />
                         </div>
                     ))}
                 </div>
@@ -24,7 +24,7 @@ export default function ProjetoCard(props) {
                 </div>
                 <div className="flex gap-4">
                     <a href={infos.link} className="h-8 flex py-1 px-8 w-fit border-2 rounded-md">
-                        <img src="github-icon.png" alt="" />
+                        <img src="gen/github-icon.png" alt="" />
                     </a>
                     {infos.seeMore ? (
                         <a href={infos.seeMore} className="py-1 px-3 w-fit border-2 rounded-md text-sm">VER MAIS +</a>
@@ -32,7 +32,7 @@ export default function ProjetoCard(props) {
                 </div>
             </div>
             <div className="relative justify-end flex saturate-0 group-hover:saturate-100 group-hover:-translate-y-2 transition ease-in-out delay-150">
-                <img src={infos.screen} alt="" />
+                <img src={`projects/${infos.screen}`} alt="" />
                 <div className={`${hidden} bg-gradient-to-r from-azulescuro to-azulclaro text-white font-medium rounded-md py-1 px-3 w-fit absolute top-40 md:top-72 md:right-2`}>Adapti</div>
             </div>
             <style jsx>{`

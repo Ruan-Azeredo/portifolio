@@ -16,7 +16,7 @@ export default function PageProjetoLayout(props) {
     const conteudo = infos.conteudo
 
     var link = null
-    if (linkFront){link = linkFront} else {link = linkBack}
+    if (linkFront) { link = linkFront } else { link = linkBack }
 
     const [display, setDisplay] = useState(['', 'hidden'])
     const [github, setGithub] = useState(link)
@@ -53,7 +53,7 @@ export default function PageProjetoLayout(props) {
                         <div className="flex gap-4 py-2">
                             {infos.icons?.map(item => (
                                 <div key={item}>
-                                    <img className="h-8" src={item} alt="" />
+                                    <img className="h-8" src={`gen/${item}`} alt="" />
                                 </div>
                             ))}
                         </div>
@@ -63,12 +63,12 @@ export default function PageProjetoLayout(props) {
                             ))}
                         </div>
                         <div className="git-container">
-                            <img src="github-icon.png"/>
+                            <img src="gen/github-icon.png"/>
                             <a  href={'https://' + github}>{github}</a>
                         </div>
                     </div>
-                    <div className="right-side">
-                        <img src={mainImg} />
+                    <div className="right-side mr-20">
+                        <img src={`projects/${mainImg}`} />
                     </div>
                 </div>
             </div>
@@ -80,11 +80,16 @@ export default function PageProjetoLayout(props) {
                         <div>FRONT-END</div>
                         <div className="line-gradient"></div>
                     </div>
-                    {conteudo.front.map((resp, index) => (
-                        <ConteudoPageProj txt={resp.txt} index={index}>
-                            <img src={resp.img} className="w-[450px] rounded-md" />
-                        </ConteudoPageProj>
-                    ))}
+                    {conteudo.front.map((resp, index) => {
+                        const className = resp.img[0] === 'L' ? 'w-[350px] p-10' : 'w-[450px]';
+                        return (
+                            <div key={index}>
+                            <ConteudoPageProj txt={resp.txt} index={index}>
+                                <img src={`projects/${resp.img}`} className={`rounded-md ${className}`} />
+                            </ConteudoPageProj>
+                            </div>
+                        );
+                    })}
                 </div>
             ) : null}
             {type != 'front' ? (
@@ -93,11 +98,16 @@ export default function PageProjetoLayout(props) {
                         <div>BACK-END</div>
                         <div className="line-gradient"></div>
                     </div>
-                    {conteudo.back.map((resp, index) => (
-                        <ConteudoPageProj txt={resp.txt} index={index}>
-                            <img src={resp.img} className="w-[450px] rounded-md" />
-                        </ConteudoPageProj>
-                    ))}
+                    {conteudo.back.map((resp, index) => {
+                        const className = resp.img[0] === 'L' ? 'w-[350px] p-10' : 'w-[450px]';
+                        return (
+                            <div key={index}>
+                            <ConteudoPageProj txt={resp.txt} index={index}>
+                                <img src={`projects/${resp.img}`} className={`rounded-md ${className}`} />
+                            </ConteudoPageProj>
+                            </div>
+                        );
+                    })}
                 </div>
             ) : null}
 
@@ -176,7 +186,7 @@ export default function PageProjetoLayout(props) {
                     display: flex;
                     flex-direction: column;
                     justify-content: space-around;
-                    padding: 40px 50px;
+                    padding: 40px 50px 40px 100px;
                 }
 
                 .header-content .description{
@@ -216,7 +226,7 @@ export default function PageProjetoLayout(props) {
                     font-weight: 400;
                     font-size: 24px;
                     color: #FFFFFF;
-                    margin: 40px 50px 0 50px;
+                    margin: 40px 50px 100px 100px;
                     position: relative;
                     top: 20px;
                     display: flex;

@@ -31,13 +31,13 @@ function MainCard() {
                     </div>
                     <div className="btn-github">
                         <a className='github-container border-grayy border-2' href="https://github.com/Ruan-Azeredo">
-                            <img src='github-icon.png' className='github-icon' />
+                            <img src='gen/github-icon.png' className='github-icon' />
                             <p className='github-link'>github.com/Ruan-Azeredo</p>
                         </a>                
                     </div>
                 </div>
                 <div className="l-photo">
-                    <img src="picwish.png" alt="" />
+                    <img src="gen/picwish.png" alt="" />
                 </div>
             </div>
         </div>
