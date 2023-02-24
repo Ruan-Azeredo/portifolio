@@ -1,7 +1,7 @@
 export default function CardContComponent(props) {
-    const grayscale = props.grayscale
+    const grayyscale = props.grayyscale
 
-    if (!grayscale) {
+    if (!grayyscale) {
         return (
             <a href={`${props.link}`}>
                 <div className="minicard-contato">
@@ -16,7 +16,7 @@ export default function CardContComponent(props) {
     } else {
         return (
             <a href={`${props.link}`}>
-                <div className="minicard-contato-gray">
+                <div className="minicard-contato-grayy">
                     <div className="icon-label">
                         <img src={props.icon} alt="" />
                         <div>{props.name}</div>
