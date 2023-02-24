@@ -1,3 +1,4 @@
+import { redirect } from "react-router-dom";
 import ProjetoCard from "../components/ProjetoCard";
 import Title from "../components/Title";
 import { projetos } from "../data";
@@ -18,11 +19,13 @@ export default function Projetos(props) {
                     <ProjetoCard key={item} infos={item} />
                 ))}
             </div>
-            <div className="bg-gradient-to-r from-azulescuro to-azulclaro mx-auto w-fit mt-16 rounded-md">
-                    <button className="bg-black border-grayy border-2 px-8 py-3 rounded-md text-white relative -left-[6px] -top-[6px] hover:translate-y-1 hover:translate-x-1 transition ease-in-out delay-100">
+            <a href="/projetos">
+                <div className="bg-gradient-to-r from-azulescuro to-azulclaro mx-auto w-fit mt-16 rounded-md">
+                    <div className="bg-black border-grayy border-2 px-8 py-3 rounded-md text-white relative -left-[6px] -top-[6px] hover:translate-y-1 hover:translate-x-1 transition ease-in-out delay-100">
                         VER MAIS +
-                    </button>
-            </div>
+                    </div>
+                </div>
+            </a>
             <style jsx>{`
                 button {
                     font-family: 'Inter';
