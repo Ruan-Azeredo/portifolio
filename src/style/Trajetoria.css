@@ -1,22 +1,20 @@
 :root{
-    --black: #202020;
-    --gray: #3d3d3d;
+    --black: #161818;
+    --grayy: #3d3d3d;
     --cinzaclaro: #909090;
     --azulescuro: #152DFF;
     --azulclaro: #41ABCC;
-    --background: #2C3333;
+    --background: #161818;
 }
 
-.trajetoria-container{
-    margin-top: 150px;
-}
-
-.card-traj{
+/* .card-traj{
     width: fit-content;
     height: fit-content;
     border-radius: 10px;
     margin-left: 20px;
     margin-top: 10px;
+    position: relative;
+    left: -80px;
 }
 
 .title-traj{
@@ -33,20 +31,21 @@
 }
 
 .card-infos-traj{
-    background-color: var(--black);
+    background-color: transparent;
     padding: 20px;
     border-radius: 10px;
     display: flex;
-    transform: rotate(5deg);
     transition: all ease-in-out 0.3s ;
 }
 
 .bg-logo-traj{
-    height: fit-content;
-    width: fit-content;
-    padding: 10px;
-    border-radius: 10px;
-    background: radial-gradient(#FFFDFD 0%, #808080 100%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+    background: #e4e4e4;
     transform: rotate(-5deg);
     margin: auto 0;
     transition: all ease-in-out 0.3s 0.3s;
@@ -54,7 +53,7 @@
 
 .description-traj{
     width: 0px;
-
+    background-color: var(--black);
     font-family: 'Inter';
     font-style: normal;
     font-weight: 400;
@@ -80,7 +79,6 @@
 }
 
 .card-traj:hover .card-infos-traj{
-    transform: rotate(0);
     padding: 20px;
 }
 
@@ -90,9 +88,35 @@
 
 .card-traj:hover .description-traj{
     padding-left: 20px;
-    width: 250px;
+    border-radius: 15px;
+    align-self: center;
     font-size: 12px;
     opacity: 100%;
+    background-color: var(--black);
+    height: 100px;
+    width: 300px;
+    transform: translateX(30px);
+    animation: ball 2s ease-in-out;
+}
+
+@keyframes ball{
+    0% {
+        transform: translateX(-100px);
+        width: 30px;
+        height: 30px;
+        background-color: var(--black);
+    }
+    50%{
+        width: 30px;
+        height: 30px;
+        transform: translateX(30px);
+    }
+    100%{
+        transform: translateX(30px);
+        background-color: var(--black);
+        height: 100px;
+        width: 300px;
+    }
 }
 
 .card-traj:hover .gradient-bot{
@@ -101,8 +125,8 @@
 }
 
 .bg-logo-traj img{
-    height: 80px;
-}
+    width: 60px;
+} */
 
 /* time line*/
 /* 
@@ -112,7 +136,13 @@
 
 .time-line{
     justify-content: center;
-    margin-top: 100px;
+    margin-top: 200px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 19px;
+    text-align: justify;
 }
 
 .time-line-container, .time-line{
@@ -127,7 +157,7 @@
     height: 2px;
 }
 
-.time-circle{
+/* .time-circle{
     width: 10px;
     height: 10px;
     border-radius: 5px;
@@ -168,11 +198,11 @@
     background-color: white;
     padding: 8px 16px;
     border-radius: 20px;    
-}
+} */
 
-.mt{
+/* .mt{
     margin-top: 220px;
-}
+} */
 
 @media (max-width: 550px){
 
@@ -182,13 +212,15 @@
 
     .time-line{
         flex-direction: column;
+        height: fit-content;
+        margin-top: 100px;
     }
 
     .time-line-gradient{
         display: none;
     }
 
-    .date{
+    /* .date{
         left: 0;
         margin: 0;
         top: 40px;
@@ -207,8 +239,8 @@
         height: 37px;
         width: 64px;
         border-radius: 0;
-    }
-
+    } */
+    /*
     .card-traj{
         margin-left: 0;
         justify-self: center;
@@ -265,5 +297,5 @@
         padding: 0;
         padding-left: 10px;
         width: 200px;
-    }
+    } */
 }
