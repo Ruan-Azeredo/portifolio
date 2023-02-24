@@ -14,7 +14,7 @@ export default function ConteudoPageProj(props) {
                     {props.children}
                 </CardBlack>
             </div>
-            <div className="txt text-gray-300">{txt}</div>
+            <div className="txt">{txt}</div>
 
             <style jsx>{`
                 .conteudo-container{
@@ -26,14 +26,15 @@ export default function ConteudoPageProj(props) {
                     width: 50%;
                     margin: 0 30px;
                     display: flex;
-                    justify-content: center;
                     align-items: center;
+                    justify-content: center;
                     font-family: 'Inter';
                     font-style: normal;
-                    font-weight: 500;
+                    font-weight: 400;
                     font-size: 16px;
-                    line-height: 29px;
+                    line-height: 22px;
                     text-align: justify;
+                    color: white;
                 }
             `}</style>
         </div>
