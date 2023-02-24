@@ -7,7 +7,7 @@ export const projetos = [
         screen: 'telamybooks.png',
         description: 'Este projeto consiste em uma aplicação onde o usuário pode cadastrar seus livros e resenhas do mesmo, para que assim tenha um lugar organizado e intuitivo para deixar suas reflexões sobre os livros lidos. O MyBooks foi desenvolvido com o Front-end e o Back-end separados, que se comunicam via API.',
         link: 'https://github.com/Ruan-Azeredo/MyBooks',
-        adapti: true,
+        // adapti: true,
         seeMore: '/mybooks'
     },
     {
@@ -66,7 +66,7 @@ export const myBooks = {
         img: 'figmamybooks.png',
         txt: 'A primeira parte do projeto foi o desenvolvimento da identidade visual do mesmo, que foi feita atravez do softwere Figma. Nele já foram feitas as referencia de como deveriam ficar as principais tela, e os Modais, os quais seriam utilizados para adicionar, atualizar e deletar os Escritores, Livros e Resenhas. No Figma tambem foi definido como seria o tema escuro e o claro, ao lado pode-se ver o projeto no tema escuro.'
         }, {
-        img: 'L_arquitemybooks.png',
+        img: 'L_arqfrontmybooks.png',
         txt: 'A estruturação do projeto foi feita utilizando o principio nativo de componentização do React. Dividi o projeto em pastas de Pages, que contem minhas páginas principais, Functions, que comporta as funções de requisição em axios e outras funções que são usadas em varios locais do sistema, Context que armazenam os Hooks globais, Conponents, que guarda os componentes JSX e o Content que possui componentes que comportão outros elementos.'
         }, {
         img: 'loginmybooks.png',
