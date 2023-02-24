@@ -5,7 +5,7 @@ function MainCard() {
         <div className="main-card-section">
             <div className='navbar'>
                 <div>
-                    <a href="/"  className="w-8 h-8"><img src="perfil.png" alt="" /></a>
+                    <a href="/"  className="w-8 h-8"><img src="gen/perfil.png" alt="" /></a>
                 </div>
                 <div>
                     <span className='navbar-item'><a href="#sobremim">SOBRE MIM</a></span>
