@@ -22,12 +22,14 @@ function AboutMe() {
                     <img src="gen/laravel-icon.png" alt="" />
                     <img src="gen/node-icon.png" alt="" />
                     <img src="gen/docker-icon.png" alt="" />
+                    <img src="gen/python-icon.png" alt="" />
                 </div>
                 <div className="second-line">
                     <img src="gen/next-icon.png" alt="" />
                     <img src="gen/css-icon.png" alt="" />
                     <img src="gen/postgres-icon.png" alt="" />
                     <img src="gen/github-icon.png" alt="" />
+                    <img src="gen/typescript-icon.png" alt="" />
                 </div>
             </div>
         </div>    
