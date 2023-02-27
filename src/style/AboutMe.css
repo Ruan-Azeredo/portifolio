@@ -209,7 +209,7 @@
 
 .tecnologias-fav-title{
     font-family: 'Roboto';
-    font-weight: 600;
+    font-weight: 400;
     font-size: 32px;
     text-align: center;
     letter-spacing: 0.1em;
@@ -221,7 +221,7 @@
 
 .grid-bar-tech-fav{
     background: linear-gradient(to right, var(--azulescuro), var(--azulclaro));
-    width: 198px;
+    width: 188px;
     height: 2px;
     position: relative;
     left: 52.5%;
