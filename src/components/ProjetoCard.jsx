@@ -15,16 +15,16 @@ export default function ProjetoCard(props) {
                 <div className="flex gap-4 py-2">
                     {infos.icons?.map(item => (
                         <div key={item}>
-                            <img className="h-8" src={`gen/${item}`} alt="" />
+                            <img className="h-8 saturate-0" src={`gen/${item}`} alt="" />
                         </div>
                     ))}
                 </div>
-                <div className="flex gap-2 py-2">
+                <div className="flex flex-wrap gap-2 py-2">
                     {infos.tags?.map(item => (
-                        <div key={item} className="bg-neutral-800 rounded-md px-3 py-1 group-hover:bg-gray-800">{item}</div>
+                        <div key={item} className="bg-neutral-800 rounded-md px-3 py-1 group-hover:bg-gray-800 min-w-fit">{item}</div>
                     ))}
                 </div>
-                <div className="flex gap-4">
+                {/* <div className="flex gap-4">
                     {infos.adapti == true ? (
                         <a href={infos.link} className="h-8 flex py-1 px-8 w-fit border-2 border-gray-500 rounded-md">
                             <Eyeslash/>
@@ -37,10 +37,24 @@ export default function ProjetoCard(props) {
                     {infos.seeMore ? (
                         <a href={infos.seeMore} className="py-1 px-3 w-fit border-2 rounded-md text-sm">VER MAIS +</a>
                     ) : null}
-                </div>
+                </div> */}
             </div>
-            <div className="relative justify-end flex saturate-0 group-hover:saturate-100 group-hover:-translate-y-2 transition ease-in-out delay-150">
-                <img src={`projects/${infos.screen}`} alt="" />
+            <div className="relative justify-end flex saturate-0 group-hover:saturate-100 group-hover:-translate-y-2 transition ease-in-out delay-150 flex-col items-center">
+                <img src={`projects/${infos.screen}`} alt="" className="my-auto max-h-[380px] object-contain" />
+                <div className="flex gap-4 mt-6">
+                    {infos.adapti == true ? (
+                        <a href={infos.link} className="h-8 flex py-1 px-8 w-fit border-2 border-gray-500 rounded-md group-hover:translate-y-2 transition ease-in-out delay-300">
+                            <Eyeslash/>
+                        </a>
+                    ) : (
+                        <a href={infos.link} className="h-8 flex py-1 px-8 w-fit border-2 rounded-md group-hover:translate-y-2 transition ease-in-out delay-300">
+                            <img src="gen/github-icon.png" alt="" />
+                        </a>
+                    )}
+                    {infos.seeMore ? (
+                        <a href={infos.seeMore} className="py-1 px-3 w-fit border-2 rounded-md text-sm group-hover:translate-y-2 transition ease-in-out delay-300">VER MAIS +</a>
+                    ) : null}
+                </div>
                 <div className={`${hidden} bg-gradient-to-r from-azulescuro to-azulclaro text-white font-medium rounded-md py-1 px-3 w-fit absolute top-40 md:top-72 md:right-2`}>Adapti</div>
             </div>
             <style jsx>{`
@@ -71,7 +85,7 @@ export default function ProjetoCard(props) {
                 }
 
                 .ProjetoCard:hover .name-prj::after{
-                    width: 120%;
+                    width: 100%;
                 }
             `}</style>
         </div>
