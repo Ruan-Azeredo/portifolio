@@ -4,11 +4,13 @@ import Title from "../components/Title";
 import { projetos } from "../data";
 
 export default function Projetos(props) {
-    let projetosArray
+    let projetosArray, hidden
     if (props.index) {
         projetosArray = projetos.slice(0, 3)
+        hidden = ''
     } else {
         projetosArray = projetos
+        hidden = 'hidden'
     }
 
     return (
@@ -20,8 +22,8 @@ export default function Projetos(props) {
                 ))}
             </div>
             <a href="/projetos">
-                <div className="bg-gradient-to-r from-azulescuro to-azulclaro mx-auto w-fit mt-16 rounded-md">
-                    <div className="bg-black border-grayy border-2 px-8 py-3 rounded-md text-white relative -left-[6px] -top-[6px] hover:translate-y-1 hover:translate-x-1 transition ease-in-out delay-100">
+                <div className="bg-gradient-to-r from-azulescuro to-azulclaro mx-auto w-fit mt-24 rounded-md">
+                    <div className={`bg-black border-grayy border-2 px-8 py-3 rounded-md text-white relative -left-[6px] -top-[6px] hover:translate-y-1 hover:translate-x-1 transition ease-in-out delay-100 ${hidden}`}>
                         VER MAIS +
                     </div>
                 </div>
