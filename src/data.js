@@ -2,8 +2,8 @@ export const projetos = [
     {
         id: 1,
         name: 'MyBooks',
-        icons: ['next-icon.png', 'node-icon.png', 'firebase-icon.png'],
-        tags: ['Full-Stack', 'Sistema', 'API Rest'],
+        icons: ['next-icon.png', 'react-icon.png', 'js-icon.png', 'node-icon.png', 'firebase-icon.png', 'tailwind-icon.png', 'PostgreSQL'],
+        tags: ['Full-Stack', 'Sistema', 'API Rest', 'Dark Mode', 'Autenticação com Google', 'PostgreSQL'],
         screen: 'telamybooks.png',
         description: 'Este projeto consiste em uma aplicação onde o usuário pode cadastrar seus livros e resenhas do mesmo, para que assim tenha um lugar organizado e intuitivo para deixar suas reflexões sobre os livros lidos. O MyBooks foi desenvolvido com o Front-end e o Back-end separados, que se comunicam via API.',
         link: 'https://github.com/Ruan-Azeredo/MyBooks',
@@ -13,21 +13,40 @@ export const projetos = [
     {
         id: 2,
         name: 'e-diaristas',
-        icons: ['next-icon.png', 'stayled-icon.png', 'laravel-icon.png'],
-        tags: ['tag de teste', 'outro teste'],
+        icons: ['next-icon.png', 'react-icon.png', 'typescript-icon.png', 'stayled-icon.png', 'laravel-icon.png', 'php-icon.png'],
+        tags: ['Full-Stack', 'Sistema', 'MySQL', 'API Rest'],
         screen: 'telaediaristas.png',
-        description: 'Este projeto foi desenvolvido no bootcamp da TreinaWeb, e consiste em um sistema com Back-end em Laravel onde pode-se cadastrar diaristas e gera uma API. A parte do Front-end foi desenvolvida em Next.js, onde o usuário digita um cep e o sistema mostra os diaristas presentes proximas ao cep.',
-        link: 'https://github.com/Ruan-Azeredo/Bootcamp-Next-e-diaristas'
+        description: 'Este projeto foi desenvolvido no bootcamp da TreinaWeb, e consiste em um sistema com Back-end em Laravel, com uma camada de Front-end para o administrador, onde pode-se cadastrar diaristas e gera uma API. A parte Front-end que fica em contato com o usuario foi desenvolvida em Next.js, onde o usuário digita um cep e o sistema mostra os diaristas presentes proximas ao cep.',
+        link: 'https://github.com/Ruan-Azeredo/Bootcamp-Next-e-diaristas',
+        seeMore: '/ediaristas'
     },
     {
         id: 3,
-        name: 'Crud',
+        name: 'Landing page de Sistema Financeiro',
+        icons: ['react-icon.png', 'js-icon.png', 'tailwind-icon.png'],
+        tags: ['react-typed', 'Landing Page', 'Estático', 'Responsivo', 'Front-end'],
+        screen: 'telafinancas.png',
+        description: 'Uma Landing Page, com conteúdo estatico, feita utilizando React.js e Tailwind.css para estilização. Também foi utilizado neste projeto, a lib react-icons e react-typed, para alguns icones e animação de leitura, respectivamente. O projeto é 100% responsivo, sendo está funcionalidade desenvolvida atravez do Tailwind também.',
+        link: 'https://github.com/Ruan-Azeredo/Finance-Landing-Page',
+        seeMore: 'https://finance-landing-page-ruby.vercel.app/'
+    },
+    {
+        id: 4,
+        name: 'Página de empresa Dínamica'
+    },
+    {
+        id: 5,
+        name: 'Cadastro de E-mails',
         icons: ['react-icon.png', 'node-icon.png', 'tailwind-icon.png'],
         tags: ['lorem inpsum'],
         screen: 'telamybooks.png',
         description: 'Um CRUD, que é uma aplicação simples que permite adicionar, ver, editar e excluir informações. Neste projeto o CRUD trabalha com usuários, coletando seus nomes e emails, alem de gera um ID para cada. O Front-end deste projeto foi desenvolvido em React.js, e o Back-end em Node.js.',
         link: 'https://github.com/Ruan-Azeredo/crud-usuarios-React-'
     },
+    {
+        id: 6,
+        name: 'Sistema Imobiliario'
+    }
 ]
 
 export const sobreMim = 'Ola, meu chamo Ruan, tenho 20 anos e estou trilhando este caminho de Desenvolvedor Web. Gosto muito de desenvolver interfaces Front-end, porem estou sempre aberto a desenvolver o Back-end de algumas aplicações, afinal, gosto de construir aplicações completas que possa ver funcionando no final. Sou um grande fã de JavaScript e gosto de desenvolver alguns designs também. Gosto de estar sempre aberto para novas tecnologias.'
@@ -50,7 +69,7 @@ export const trajetorias = [
 export const myBooks = {
     frontBack: true,
     title: 'MyBooks',
-    icons: ['next-icon.png', 'node-icon.png', 'firebase-icon.png'],
+    icons: ['next-icon.png', 'react-icon.png', 'js-icon.png', 'node-icon.png', 'firebase-icon.png', 'tailwind-icon.png'],
     tags: ['Full-Stack', 'Sistema', 'API Rest'],
     description: 'Este projeto consiste em uma aplicação onde o usuario pode cadastrar seus livros e resenhas do mesmo, para que assim tenha um lugar organizado e intuitivo para deixar suas reflexões sobre os livros lidos. O MyBooks foi desenvolvido com o Front-end e o Back-end separados.',
     linkFront: 'github.com/Ruan-Azeredo/MyBooks',
@@ -90,4 +109,42 @@ export const myBooks = {
         txt: 'Os Controllers são onde são definidas efetivamente as rotas de API, aqui temos um exemplo, da rota de delete dos BookController, que alem de apagar o livro, precisa apagar a imagem que está salva em /public.'
         }
     ]}
+}
+
+export const ediaristas = {
+    frontBack: true,
+    title: 'e-diariastas',
+    icons: ['next-icon.png', 'react-icon.png', 'typescript-icon.png', 'stayled-icon.png', 'laravel-icon.png', 'php-icon.png'],
+    tags: ['Full-Stack', 'Sistema', 'API Rest'],
+    description: 'Este projeto foi desenvolvido no bootcamp da TreinaWeb, e consiste em um sistema de CRUD feito com Laravel onde pode-se cadastrar diaristas e gera uma API, e esta aplicação gera uma API Rest. A parte do Next.js, mostra um campo, onde o usuário digita um cep e o sistema mostra os diaristas presentes proximas a este cep.',
+    linkFront: 'https://github.com/Ruan-Azeredo/Bootcamp-Next-e-diaristas',
+    linkBack: 'https://github.com/Ruan-Azeredo/Bootcamp-Api-laravel-e-diaristas',
+    mainImg: 'telaediaristas.png',
+    type: 'frontAndBack',
+    conteudo: {
+        front: [
+            {
+                img: 'telaprincipaldiarista.png',
+                txt: 'Em geral o funcionamento da parte feita em Next.js possui um objetivo simples, que é consultar a API quais diaristas estão proximas ao endereço que foi passado, e em sequencia, receber estes diaristas e mostralos ao usuario, de maneira simples, rápida e facil.'
+            },
+            {
+                img: 'L_diaristasencontrados.png',
+                txt: 'com as informações recebidas pela API Rest, '
+            },
+            {
+                img: 'telaediaristascrud.png',
+                txt: 'com as informações recebidas pela API Rest, '
+            },
+            {
+                img: 'editardiaristas.png',
+                txt: 'com as informações recebidas pela API Rest, '
+            }
+        ],
+        back: [
+            {
+                img: '...',
+                txt: '...'
+            }
+        ]
+    }
 }
