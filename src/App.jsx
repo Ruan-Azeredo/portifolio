@@ -8,7 +8,7 @@ import './style/Contato.css'
 import './style/Footer.css'
 import Home from './Home';
 import PageProjetoLayout from './PageProjetoLayout';
-import { myBooks } from './data';
+import { ediaristas, myBooks } from './data';
 import PageProjetos from './PageProjetos';
 
 function App() {
@@ -18,6 +18,7 @@ function App() {
         <Route path='/' element={<Home />} />
         
         <Route path='/MyBooks' element={<PageProjetoLayout infos={myBooks} />} />
+        <Route path='/ediaristas' element={<PageProjetoLayout infos={ediaristas} />} />
 
         <Route path='/projetos' element={<PageProjetos/>} />
       </Routes>   
