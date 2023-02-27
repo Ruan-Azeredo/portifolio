@@ -2,6 +2,9 @@ import { useState } from "react"
 import { Link } from "react-router-dom"
 import ConteudoPageProj from "./components/ConteudoPageProj"
 import { Arrow } from "./icons/Arrow"
+import React from "react";
+import { Modal, Button, Text, Input, Row, Checkbox } from "@nextui-org/react";
+import ModalButton from "./components/ModalButton";
 
 export default function PageProjetoLayout(props) {
     const infos = props.infos
@@ -31,6 +34,15 @@ export default function PageProjetoLayout(props) {
         }
     }
 
+    const [visible, setVisible] = React.useState(false);
+    const [imginfo, setImginfo] = useState()
+    const handler = () => setVisible(true);
+
+    const closeHandler = () => {
+        setVisible(false);
+        console.log("closed");
+    };
+
     return (
         <div>
             {frontAndBack ? (
@@ -50,14 +62,14 @@ export default function PageProjetoLayout(props) {
                 <div className="header-content">
                     <div className="left-side">
                         <div className="description">{description}</div>
-                        <div className="flex gap-4 py-2">
+                        <div className="flex gap-4 py-2 mt-4">
                             {infos.icons?.map(item => (
                                 <div key={item}>
-                                    <img className="h-8" src={`gen/${item}`} alt="" />
+                                    <img className="h-8 saturate-0" src={`gen/${item}`} alt="" />
                                 </div>
                             ))}
                         </div>
-                        <div className="flex gap-2 py-2">
+                        <div className="flex gap-2 py-2 mt-4">
                             {infos.tags?.map(item => (
                                 <div key={item} className="bg-gray-800 text-white px-3 py-1 rounded-md">{item}</div>
                             ))}
@@ -68,7 +80,7 @@ export default function PageProjetoLayout(props) {
                         </div>
                     </div>
                     <div className="right-side mr-20">
-                        <img src={`projects/${mainImg}`} />
+                        <img src={`projects/${mainImg}`} className="max-h-[380px]"/>
                     </div>
                 </div>
             </div>
@@ -84,9 +96,11 @@ export default function PageProjetoLayout(props) {
                         const className = resp.img[0] === 'L' ? 'w-[350px] p-10' : 'w-[450px]';
                         return (
                             <div key={index}>
-                            <ConteudoPageProj txt={resp.txt} index={index}>
-                                <img src={`projects/${resp.img}`} className={`rounded-md ${className}`} />
-                            </ConteudoPageProj>
+                                <ConteudoPageProj txt={resp.txt} index={index}>
+                                    <ModalButton img={`projects/${resp.img}`}>
+                                        <img src={`projects/${resp.img}`} className={`rounded-md ${className}`} />
+                                    </ModalButton>
+                                </ConteudoPageProj>
                             </div>
                         );
                     })}
