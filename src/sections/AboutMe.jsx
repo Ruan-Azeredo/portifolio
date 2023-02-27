@@ -25,11 +25,12 @@ function AboutMe() {
                     <img src="gen/python-icon.png" alt="" />
                 </div>
                 <div className="second-line">
-                    <img src="gen/next-icon.png" alt="" />
+                    <img src="gen/vercel-icon.ico" alt="" />
                     <img src="gen/css-icon.png" alt="" />
                     <img src="gen/postgres-icon.png" alt="" />
                     <img src="gen/github-icon.png" alt="" />
                     <img src="gen/typescript-icon.png" alt="" />
+                    <img src="gen/next-icon.png" alt="" />
                 </div>
             </div>
         </div>    
