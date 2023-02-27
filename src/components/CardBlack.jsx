@@ -3,7 +3,7 @@ export default function CardBlack(props) {
     return (
         <div className='out-gradient'>
             <div className='in-gradient'>
-                <div className='card-backgr-black'>
+                <div className='card-backgr-black h-fit'>
                     {props.children}
                 </div>
             </div>
