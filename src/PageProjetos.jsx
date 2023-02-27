@@ -3,7 +3,7 @@ import Projetos from './sections/Projetos'
 
 const PageProjetos = () => {
     return (
-        <div>
+        <div className='mt-[-4rem]'>
             <Projetos index={false} />
             <div className='gradient grad-1'></div>
             <div className='gradient grad-2'></div>
