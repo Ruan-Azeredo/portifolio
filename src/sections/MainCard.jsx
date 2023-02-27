@@ -1,3 +1,4 @@
+import ModalButton from "../components/ModalButton";
 import RuanAzeredo from "../components/RuanAzeredo";
 
 function MainCard() {
@@ -5,7 +6,11 @@ function MainCard() {
         <div className="main-card-section">
             <div className='navbar'>
                 <div>
-                    <a href="/"  className="w-8 h-8"><img src="gen/perfil.png" alt="" /></a>
+                    {/* <a href="/" className="w-8 h-8"> */}
+                    <ModalButton img="gen/perfilSquare.png">
+                        <img src="gen/perfilSquare.png" alt="" className="w-8 h-8 rounded-full"/>
+                    </ModalButton>
+                    {/* </a> */}
                 </div>
                 <div>
                     <span className='navbar-item'><a href="#sobremim">SOBRE MIM</a></span>
