@@ -1,10 +1,10 @@
 :root{
-    --black: #202020;
-    --gray: #3d3d3d;
+    --black: #161818;
+    --grayy: #3d3d3d;
     --cinzaclaro: #909090;
     --azulescuro: #152DFF;
     --azulclaro: #41ABCC;
-    --background: #2C3333;
+    --background: #161818;
 }
 
 .gradient-bg{

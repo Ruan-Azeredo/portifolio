@@ -18,7 +18,7 @@
     -webkit-text-fill-color: transparent;
 }
 
-.grayscale{
+.grayyscale{
     background: linear-gradient(to right, var(--light), var(--dark));
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;

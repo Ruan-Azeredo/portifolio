@@ -3,7 +3,7 @@ export default function CardBlack(props) {
     return (
         <div className='out-gradient'>
             <div className='in-gradient'>
-                <div className='card-bg-black'>
+                <div className='card-backgr-black h-fit'>
                     {props.children}
                 </div>
             </div>
@@ -13,14 +13,15 @@ export default function CardBlack(props) {
                         width: ${props.width};
                     }
 
-                    .card-bg-black{
-                        background-color: #202020;
-                        padding: 40px;
+                    .card-backgr-black{
+                        background-color: #161818;
                         width: fit-content;
                         border-radius: 10px;
                         position: relative;
                         top: -10px;
-                        left: -10px;           
+                        left: -10px;
+                        padding: 0px;
+                        border: solid gray 2px          
                     }
 
                     .out-gradient{
@@ -34,7 +35,7 @@ export default function CardBlack(props) {
                     }
 
                     .in-gradient{
-                        background: #2C3333;
+                        background: #161818;
                         width: fit-content;
                         border-radius: 10px;
                     }

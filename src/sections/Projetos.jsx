@@ -1,44 +1,43 @@
+import { redirect } from "react-router-dom";
 import ProjetoCard from "../components/ProjetoCard";
 import Title from "../components/Title";
+import { projetos } from "../data";
 
-export default function Projetos() {
+export default function Projetos(props) {
+    let projetosArray, hidden
+    if (props.index) {
+        projetosArray = projetos.slice(0, 3)
+        hidden = ''
+    } else {
+        projetosArray = projetos
+        hidden = 'hidden'
+    }
+
     return (
-        <div><a name='projetos'></a>
+        <div className="mt-40"><a name='projetos'></a>
             <Title title='PROJETOS'/>
-            <div className="divisao-col-projetos">
-                <div className="col1">
-                    <ProjetoCard
-                        name='MyBooks'
-                        icon1='next-icon.png'
-                        icon2='node-icon.png'
-                        icon3='firebase-icon.png'
-                        screen='telamybooks.png'
-                        description='Este projeto consiste em uma aplicação onde o usuário pode cadastrar seus livros e resenhas do mesmo, para que assim tenha um lugar organizado e intuitivo para deixar suas reflexões sobre os livros lidos. O MyBooks foi desenvolvido com o Front-end e o Back-end separados, que se comunicam via API.'
-                        link='https://github.com/Ruan-Azeredo/MyBooks'
-                    />
-                    <ProjetoCard
-                        name='e-diaristas'
-                        icon1='next-icon.png'
-                        icon2='stayled-icon.png'
-                        icon3='laravel-icon.png'
-                        screen='telaediaristas.png'
-                        description='Este projeto foi desenvolvido no bootcamp da TreinaWeb, e consiste em um sistema com Back-end em Laravel onde pode-se cadastrar diaristas e gera uma API. A parte do Front-end foi desenvolvida em Next.js, onde o usuário digita um cep e o sistema mostra os diaristas presentes proximas ao cep.'
-                        link='https://github.com/Ruan-Azeredo/Bootcamp-Next-e-diaristas'
-                    />
-                </div>
-                <div className="col2">
-                <ProjetoCard
-                        name='Crud'
-                        icon1='react-icon.png'
-                        icon2='node-icon.png'
-                        icon3='tailwind-icon.png'
-                        screen='telacrud.png'
-                        description='Um CRUD, que é uma aplicação simples que permite adicionar, ver, editar e excluir informações. Neste projeto o CRUD trabalha com usuários, coletando seus nomes e emails, alem de gera um ID para cada.
-                        O Front-end deste projeto foi desenvolvido em React.js, e o Back-end em Node.js.'
-                        link='https://github.com/Ruan-Azeredo/crud-usuarios-React-'
-                    />
-                </div>
+            <div className="flex flex-col gap-20 md:gap-36">
+                {projetosArray.map(item => (
+                    <ProjetoCard key={item} infos={item} />
+                ))}
             </div>
+            <a href="/projetos">
+                <div className="bg-gradient-to-r from-azulescuro to-azulclaro mx-auto w-fit mt-24 rounded-md">
+                    <div className={`bg-black border-grayy border-2 px-8 py-3 rounded-md text-white relative -left-[6px] -top-[6px] hover:translate-y-1 hover:translate-x-1 transition ease-in-out delay-100 ${hidden}`}>
+                        VER MAIS +
+                    </div>
+                </div>
+            </a>
+            <style jsx>{`
+                button {
+                    font-family: 'Inter';
+                    font-style: normal;
+                    font-weight: 400;
+                    font-size: 16px;
+                    line-height: 19px;
+                    text-align: justify;
+                }    
+            `}</style>
         </div>
     )
 }

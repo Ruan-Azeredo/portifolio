@@ -1,8 +1,8 @@
 export default function Title(props) {
-    const grayscale = props.grayscale
-    if (grayscale) {
+    const grayyscale = props.grayyscale
+    if (grayyscale) {
         return (
-            <h2 className="title grayscale">{ props.title }</h2>
+            <h2 className="title grayyscale">{ props.title }</h2>
         )   
     } else {
         return (
