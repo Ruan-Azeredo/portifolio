@@ -29,7 +29,7 @@ function MainCard() {
                     Alguém que adora música, café e JavaScript e <span>Front-end</span>.
                     </div>
                     <div className="name-subtitle mobi-sub">
-                        Front-end Developer
+                        Web Developer
                     </div>
                     <div className="name-subtitle desk-sub">
                     Vamos construir algo incrível juntos!
