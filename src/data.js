@@ -44,10 +44,11 @@ export const projetos = [
         id: 5,
         name: 'Cadastro de E-mails',
         icons: ['react-icon.png', 'node-icon.png', 'tailwind-icon.png'],
-        tags: ['lorem inpsum'],
-        screen: '',
+        tags: ['Full-Stack', 'API Rest', 'MySQL', 'Sequelize'],
+        screen: 'telacrud.png',
         description: 'Um CRUD, que é uma aplicação simples que permite adicionar, ver, editar e excluir informações. Neste projeto o CRUD trabalha com usuários, coletando seus nomes e emails, alem de gera um ID para cada. O Front-end deste projeto foi desenvolvido em React.js, e o Back-end em Node.js.',
-        link: 'https://github.com/Ruan-Azeredo/crud-usuarios-React-'
+        link: 'https://github.com/Ruan-Azeredo/crud-usuarios-React-',
+        seeMore: '/cadastroemails'
     }
     // {
     //     id: 6,
@@ -187,6 +188,38 @@ export const irrigafacil = {
             {
                 img: 'requestirrigafacil.png',
                 txt: 'Este projeto também conta com features de login, que protege as rotas de edição de conteúdo e regras de negocio, que definem alguns padrões de informações que podem ser adicionadas ao banco de dados, para que dessa forma, informações de tipos diferentes ao esperado não poderão ser adicionadas, evitando assim problemas que podem vir por conta desta incompatibilidade.'
+            }
+        ]
+    }
+}
+
+export const crud = {
+    frontBack: true,
+    title: 'Cadastro de E-mails',
+    icons: ['react-icon.png', 'node-icon.png', 'tailwind-icon.png'],
+    tags: ['Full-Stack', 'API Rest', 'MySQL', 'Sequelize'],
+    description: 'Um CRUD, que é uma aplicação simples que permite adicionar, ver, editar e excluir informações. Neste projeto o CRUD trabalha com usuários, coletando seus nomes e emails, alem de gera um ID para cada. O Front-end deste projeto foi desenvolvido em React.js, e o Back-end em Node.js.',
+    mainImg: 'telacrud.png',
+    type: 'frontAndBack',
+    conteudo: {
+        front: [
+            {
+                img: 'principalcrud.png',
+                txt: 'Este projeto foi desenvolvido com uma estrutura bem definida de front-end e back-end por meio do uso dos frameworks React.js e Node.js, respectivamente. Como ambos frameworks, utilizam a linguagem JavaScript, e a conexão entre o front e o back é feita atravez de uma API Rest, com o auxilio do Axios, tanto em React.js como no Node.js.'
+            },
+            {
+                img: 'modalcrud.png',
+                txt: 'O design deste projeto foi desenvolvido por mim também, e em geral mostra uma tabela, com as opções padrões de um CRUD, de ver, editar, deletar e atualizar cada item. Também foi utilizado a biblioteca "react-modal" para a utilização de modais.'
+            }
+        ],
+        back: [
+            {
+                img: 'controllercrud.png',
+                txt: 'O Back-end deste projeto foi desenvolvido atravez do Node.js, que utiliza JavaScript, e foi feito utilizando uma estruruta com /config, que faz a conexão com o banco de dados, /migrations, que monta as tabelas, /models, que modela as tabelas, e /controllers, que gerencia as informações e controla as chamadas API Rest, que são feitas por chamdas HTTP.'
+            },
+            {
+                img: 'migrationcrud.png',
+                txt: 'A parte de conexão com o banco de dados fica por responsabilidade do Sequelize, que um ORM que permite a conexão com o MySQL, um banco de dados relacional. Este banco de dados foi desenvolvido utilizando container com Docker.'
             }
         ]
     }
