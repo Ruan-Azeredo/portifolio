@@ -2,7 +2,7 @@ export default function CardComponent(props) {
 
     const infos = props.infos
 
-    var fl, end, start
+    var fl, end, start, link
     if (infos.name == 'Adapti') {
         fl = 'flex-col-reverse'
         end = 'items-end'
@@ -15,18 +15,20 @@ export default function CardComponent(props) {
 
     return (
         <div className={`flex ${fl} relative -top-[100px] md:-top-[209px] z-30 px-5 md:px-20`}>
-            <div className="bg-black border-grayy border-2 h-fit md:h-48 p-4 flex flex-col rounded-lg gap-2 items-start drop-shadow-xl relative md:-left-5 hover:-rotate-2 transition ease-in-out delay-50">
-                <div className="flex w-full justify-between">
-                    <div className="bg-gradient-to-br from-white to-grayy w-14 h-14 grid items-center p-2 rounded-lg drop-shadow-xl">
-                        <img src={`gen/${infos.logo}`} alt=""/>
+            <a href={infos.link}>
+                <div className="bg-black border-grayy border-2 h-fit md:h-48 p-4 flex flex-col rounded-lg gap-2 items-start drop-shadow-xl relative md:-left-5 hover:-rotate-2 transition ease-in-out delay-50">
+                    <div className="flex w-full justify-between">
+                        <div className="bg-gradient-to-br from-white to-grayy w-14 h-14 grid items-center p-2 rounded-lg drop-shadow-xl">
+                            <img src={`gen/${infos.logo}`} alt=""/>
+                        </div>
+                        <div className="font-semibold text-lg text-white mx-5 my-2">{infos.name}</div>
                     </div>
-                    <div className="font-semibold text-lg text-white mx-5 my-2">{infos.name}</div>
+                    <div className="text-sm text-white pr-2 max-w-sm w-fit">
+                
+                        <div className="text-justify">{infos.description}</div>
+                    </div>
                 </div>
-                <div className="text-sm text-white pr-2 max-w-sm w-fit">
-                    
-                    <div className="text-justify">{infos.description}</div>
-                </div>
-            </div>
+            </a>
             <div className="bg-white rounded-full h-3 w-3 mx-10 my-3 hidden md:block">
 
             </div>
