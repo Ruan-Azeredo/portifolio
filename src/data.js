@@ -32,21 +32,27 @@ export const projetos = [
     },
     {
         id: 4,
-        name: 'Página de empresa Dínamica'
+        name: 'Página de Empresa Dínamica',
+        icons: ['laravel-icon.png', 'css-icon.png', 'php-icon.png'],
+        tags: ['Full-Stack', 'slick', 'Administrativo', 'Login', 'Dinâmico', 'Responsivo'],
+        screen: 'telairrigafacil.png',
+        description: 'Página de contúedo dínamico, desenvolvida na Adapti Empresa Junior, em uma esquipe com mais tres pessoas. Este projeto, desenvolvido com Laravel, foi realizado para atender a demanda do cliente que precisava deum site, bem como poder atualizar as informações e banners deste site, o papel do sistema administrativo.',
+        adapti: true,
+        seeMore: '/irrigafacil',
     },
     {
         id: 5,
         name: 'Cadastro de E-mails',
         icons: ['react-icon.png', 'node-icon.png', 'tailwind-icon.png'],
         tags: ['lorem inpsum'],
-        screen: 'telamybooks.png',
+        screen: '',
         description: 'Um CRUD, que é uma aplicação simples que permite adicionar, ver, editar e excluir informações. Neste projeto o CRUD trabalha com usuários, coletando seus nomes e emails, alem de gera um ID para cada. O Front-end deste projeto foi desenvolvido em React.js, e o Back-end em Node.js.',
         link: 'https://github.com/Ruan-Azeredo/crud-usuarios-React-'
-    },
-    {
-        id: 6,
-        name: 'Sistema Imobiliario'
     }
+    // {
+    //     id: 6,
+    //     name: 'Sistema Imobiliario'
+    // }
 ]
 
 export const sobreMim = 'Ola, meu chamo Ruan, tenho 20 anos e estou trilhando este caminho de Desenvolvedor Web. Gosto muito de desenvolver interfaces Front-end, porem estou sempre aberto a desenvolver o Back-end de algumas aplicações, afinal, gosto de construir aplicações completas que possa ver funcionando no final. Sou um grande fã de JavaScript e gosto de desenvolver alguns designs também. Gosto de estar sempre aberto para novas tecnologias.'
@@ -56,13 +62,15 @@ export const trajetorias = [
         name: 'UFES',
         logo: 'logo-ufes.png',
         description: 'Após terminar meu Ensino Médio, que foi atrelado ao Técnico em Mecânica, decidi que queria seguir a profissão de programador. Em função disso, entrei no curso de Engenharia da Computação, que curso na UFES.',
-        time: 'ABR/2021'
+        time: 'ABR/2021',
+        link: 'https://www.ufes.br/'
     },
     {
         name: 'Adapti',
         logo: 'logo-adapti.png',
         description: 'Entrei na Empresa Junior da Computação da Faculdade, empresa a qual não tem fins lucrativos para os membros, e que faço parte até hoje, nela aprendi como programar e ter a contato com o mundo do desenvolvimento web.',
         time: 'SET/2021',
+        link: 'https://www.adapti.info/'
     }
 ]
 
@@ -125,25 +133,60 @@ export const ediaristas = {
         front: [
             {
                 img: 'telaprincipaldiarista.png',
-                txt: 'Em geral o funcionamento da parte feita em Next.js possui um objetivo simples, que é consultar a API quais diaristas estão proximas ao endereço que foi passado, e em sequencia, receber estes diaristas e mostralos ao usuario, de maneira simples, rápida e facil.'
+                txt: 'Em geral o funcionamento da parte feita em Next.js possui um objetivo simples, que é consultar a API quais diaristas estão proximas ao endereço que foi passado, e em sequencia, receber estes diaristas e mostra-los ao usuario, de maneira simples, rápida e facil.'
             },
             {
                 img: 'L_diaristasencontrados.png',
-                txt: 'com as informações recebidas pela API Rest, '
+                txt: 'com as informações recebidas pela API Rest, o site mostra os diaristas proximos a ele, de acordo com o CEP, juntamente com algumas informaçôes relevantes sobre estes diaristas.'
             },
             {
                 img: 'telaediaristascrud.png',
-                txt: 'com as informações recebidas pela API Rest, '
+                txt: 'O sistema de cadastro dos diaristas foi desenvolvido em Laravel, php, que permite a construção de um sistema full-stack. O mesmo possui conexão com o banco de dados, que neste projeto utiliza o MySQL. A parte a qual possui interação com o usuario administrador é basicamente um CRUD, com as opções de criar, editar, ver e excluir quaisquer diarista.'
             },
             {
                 img: 'editardiaristas.png',
-                txt: 'com as informações recebidas pela API Rest, '
+                txt: 'Para adicionar e atualizar informações, existe um formulario, que foi desenvolvido nativamente com o Laravel, com diversos tipos de inputs. Estes campos do formulario também contam com requisições para que o usuario não adicione diaristas sem algumas informações importantes para o funcionamento da API.'
             }
         ],
         back: [
             {
-                img: '...',
-                txt: '...'
+                img: 'viacepediaristas.png',
+                txt: 'A principal tarefa que o back-end deste projeto cumpre, é cadastrar os diaristas no banco de dados e utilizar o CEP dos mesmos para acessar a API viaCEP, para pegar a localização deste endereço, bem como, pegar o CEP digitado pelo usuario no site aberto, e consultar, de maneira semelhante a consulta dos diaristas, a localização do ususario do site, e comparar com a dos diaristas, para dessa forma poder retornar apenas os diaristas que tem compatibilidade de localização.'
+            },
+            {
+                img: 'requisicoesediaristas.png',
+                txt: 'Dentro do back-end em Laravel,foram feitas diversas regras de negocio, que ajudam no funcionamento do sistema, para que não sejam inseridas no  banco de dados, informações que não condizem com o padrão que foi adotado. Assim diminuindo o indice de problemas que podem vir a ocorrer.'
+            }
+        ]
+    }
+}
+
+export const irrigafacil = {
+    frontBack: true,
+    title: 'Página de Empresa Dínamica',
+    icons: ['laravel-icon.png', 'css-icon.png', 'php-icon.png'],
+    tags: ['Full-Stack', 'slick', 'Administrativo', 'Login', 'Dinâmico'],
+    description: 'Página de contúedo dínamico, desenvolvida na Adapti Empresa Junior, em uma esquipe com mais tres pessoas. Este projeto, desenvolvido com Laravel, foi realizado para atender a demanda do cliente que precisava deum site, bem como poder atualizar as informações e banners deste site, o papel do sistema administrativo.',
+    mainImg: 'telairrigafacil.png',
+    type: 'frontAndBack',
+    conteudo: {
+        front: [
+            {
+                img: 'irrigafaciltop.png',
+                txt: 'A parte do site deste projeto conta com um banner, feito com a biblioteca slick, alem de outras sections, como de Sobre Nós, que possui animação na ha exibição do MVV, e a de Serviços, que mostra os tipos de serviçes, que que se ajustam dinamicamente.'
+            },
+            {
+                img: 'irrigafacilbot.png',
+                txt: 'A parte de Portifólio e Blog, mostra alguns exemplares, os adicionados mais recentemente, ambos contam com animações para exibição de informações na index, e uma página dedicada para mostrar todos os exemplares, de cada projeto e postagem. O projeto também conta com uma área de contato, onde é mostrada a localização, utilizando a API do Google Maps.'
+            }
+        ], back: [
+            {
+                img: 'crudirrigafacil.png',
+                txt: 'O back-end desta landing page dinâmica é feita no Laravel também, uma vez que este sistema possui uma arquitetura monolitica, caracteristica do framework. A principal função do back-end desta aplicação, é cadastrar as informações como Posts, Banners, Sobre nós e outras informações e guardar estes dados no banco de dados, que neste projeto utiliza o MySQL, um banco realacional.',
+            },
+            {
+                img: 'requestirrigafacil.png',
+                txt: 'Este projeto também conta com features de login, que protege as rotas de edição de conteúdo e regras de negocio, que definem alguns padrões de informações que podem ser adicionadas ao banco de dados, para que dessa forma, informações de tipos diferentes ao esperado não poderão ser adicionadas, evitando assim problemas que podem vir por conta desta incompatibilidade.'
             }
         ]
     }
