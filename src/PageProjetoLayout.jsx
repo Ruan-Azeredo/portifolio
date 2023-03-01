@@ -19,7 +19,10 @@ export default function PageProjetoLayout(props) {
     const conteudo = infos.conteudo
 
     var link = null
+    var adaptiHidden
     if (linkFront) { link = linkFront } else { link = linkBack }
+    if (linkBack && linkFront) { adaptiHidden = '' } else { adaptiHidden = 'hidden' }
+    console.log('adaptihidden: ',adaptiHidden)
 
     const [display, setDisplay] = useState(['', 'hidden'])
     const [github, setGithub] = useState(link)
@@ -75,7 +78,7 @@ export default function PageProjetoLayout(props) {
                             ))}
                         </div>
                         <div className="git-container">
-                            <img src="gen/github-icon.png"/>
+                            <img src="gen/github-icon.png" className={adaptiHidden} />
                             <a  href={'https://' + github}>{github}</a>
                         </div>
                     </div>
@@ -116,8 +119,10 @@ export default function PageProjetoLayout(props) {
                         const className = resp.img[0] === 'L' ? 'w-[350px] p-10' : 'w-[450px]';
                         return (
                             <div key={index}>
-                            <ConteudoPageProj txt={resp.txt} index={index}>
-                                <img src={`projects/${resp.img}`} className={`rounded-md ${className}`} />
+                                <ConteudoPageProj txt={resp.txt} index={index}>
+                                    <ModalButton img={`projects/${resp.img}`}>
+                                        <img src={`projects/${resp.img}`} className={`rounded-md ${className}`} />
+                                    </ModalButton>
                             </ConteudoPageProj>
                             </div>
                         );
