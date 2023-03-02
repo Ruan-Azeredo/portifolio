@@ -72,7 +72,7 @@ export default function PageProjetoLayout(props) {
                                 </div>
                             ))}
                         </div>
-                        <div className="flex gap-2 py-2 mt-4">
+                        <div className="flex flex-wrap gap-2 py-2 mt-4">
                             {infos.tags?.map(item => (
                                 <div key={item} className="bg-gray-800 text-white px-3 py-1 rounded-md">{item}</div>
                             ))}
@@ -82,7 +82,7 @@ export default function PageProjetoLayout(props) {
                             <a  href={'https://' + github}>{github}</a>
                         </div>
                     </div>
-                    <div className="right-side mr-20">
+                    <div className="right-side md:mr-20">
                         <img src={`projects/${mainImg}`} className="max-h-[380px]"/>
                     </div>
                 </div>
