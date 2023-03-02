@@ -49,6 +49,16 @@ export const projetos = [
         description: 'Um CRUD, que é uma aplicação simples que permite adicionar, ver, editar e excluir informações. Neste projeto o CRUD trabalha com usuários, coletando seus nomes e emails, alem de gera um ID para cada. O Front-end deste projeto foi desenvolvido em React.js, e o Back-end em Node.js.',
         link: 'https://github.com/Ruan-Azeredo/crud-usuarios-React-',
         seeMore: '/cadastroemails'
+    },
+    {
+        id: 6,
+        name: 'Buscador de Imagens',
+        icons: ['react-icon.png', 'tailwind-icon.png', 'js-icon.png'],
+        tags: ['Front-end', 'Consumo de API'],
+        screen: 'telabuscaimgs.png',
+        description: 'Um pesquisador de imagens, onde pode-se adicionar algum tema, serão exibidas imagens relacionadas a este tema, o projeto utiliza um consumo de API de maneira nativa, utilizando o Fetch. A estilização da aplicação utiliza Tailwind.css e CSS.',
+        link: 'https://github.com/Ruan-Azeredo/Buscador-de-Imagens',
+        seeMore: 'https://buscador-de-imagens-five.vercel.app/'
     }
     // {
     //     id: 6,
