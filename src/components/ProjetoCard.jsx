@@ -48,14 +48,14 @@ export default function ProjetoCard(props) {
                         </a>
                     ) : (
                         <a href={infos.link} className="h-8 flex py-1 px-8 w-fit border-2 rounded-md group-hover:translate-y-2 transition ease-in-out delay-300">
-                            <img src="gen/github-icon.png" alt="" />
+                            <img src="gen/github-icon.png" alt="" className="h-5 w-5"/>
                         </a>
                     )}
                     {infos.seeMore ? (
                         <a href={infos.seeMore} className="py-1 px-3 w-fit border-2 rounded-md text-sm group-hover:translate-y-2 transition ease-in-out delay-300">VER MAIS +</a>
                     ) : null}
                 </div>
-                <div className={`${hidden} bg-gradient-to-r from-azulescuro to-azulclaro text-white font-medium rounded-md py-1 px-5 w-fit absolute top-[170px] md:top-72 md:left-5 left-3`}>Adapti</div>
+                <div className={`${hidden} bg-gradient-to-r from-azulescuro to-azulclaro md:text-md text-sm text-white md:font-medium font-light rounded-md py-1 md:px-5 px-3 w-fit absolute top-0 md:top-72 md:left-5 right-0`}>Adapti</div>
             </div>
             <style jsx>{`
                 .ProjetoCard {
