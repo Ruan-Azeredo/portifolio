@@ -278,6 +278,12 @@ export default function PageProjetoLayout(props) {
                     .right-side{
                         padding: 25px;
                     }
+
+                    .header .title-project{
+                        text-align: left;
+                        line-height: 55px;
+                        margin: 40px 20px 50px 20px;
+                    }
                 }
             `}</style>
         </div>
