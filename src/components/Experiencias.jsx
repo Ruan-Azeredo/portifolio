@@ -22,7 +22,7 @@ const Experiencias = () => {
                     Linguagens, métodologias, frameworks, conceitos e tecnologias que aprendi e tive contato ao longo da minha trajetoria como Desenvolvedor em diversos lugares e projetos.
                 </div>
             </div>
-            <div className='bg-black rounded-xl'>
+            <div className='bg-transparent rounded-xl'>
                 <div className='flex flex-wrap pb-4 md:pb-5 w-full justify-evenly rounded-lg'>
                 {xp.map(item => (
                         <Tooltip content={item[1]} css={{maxWidth: "200px"}} isDisabled={disable}>
