@@ -1,4 +1,5 @@
 import CardComponent from "../components/CardComponent";
+import Experiencias from "../components/Experiencias";
 import Title from "../components/Title";
 import { trajetorias } from "../data";
 
@@ -12,7 +13,7 @@ export default function Trajetoria() {
                 ))}
                 <div className="time-line-gradient"></div>
             </div>
-            {/* <div className="time-line-container"></div> */}
+            <Experiencias/>
         </div>
     )
 }
