@@ -99,6 +99,14 @@ a:visited, a:link{
   height: 300px;
 }
 
+.grad-6{
+  top: 4500px;
+  left: 150px;
+
+  width: 200px;
+  height: 200px;
+}
+
 /* .main-card-section{
   background: linear-gradient(180deg, #666666 0%, var(--background) 100%);
 } */
@@ -520,5 +528,9 @@ a:visited, a:link{
   
     width: 150px;
     height: 150px;
+  }
+
+  .grad-6{
+    top: 5800px;
   }
 }

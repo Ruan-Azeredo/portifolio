@@ -19,6 +19,7 @@ export default function Home() {
             <div className='gradient grad-3'></div>
             <div className='gradient grad-4'></div>
             <div className='gradient grad-5'></div>
+            <div className='gradient grad-6'></div>
         </div>
     )
 }
