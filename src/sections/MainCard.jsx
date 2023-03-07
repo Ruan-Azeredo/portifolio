@@ -26,7 +26,7 @@ function MainCard() {
                     {/* <div className="name n-white">Ruan Azeredo</div>
                     <div className="name n-gradient">Ruan Azeredo</div> */}
                     <div className="name-subtitle desk-sub">
-                    Alguém que adora música, café e JavaScript e <span>Front-end</span>.
+                    Alguém que adora música, café, JavaScript e <span>Front-end</span>.
                     </div>
                     <div className="name-subtitle mobi-sub">
                         Web Developer
