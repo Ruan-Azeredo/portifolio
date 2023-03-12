@@ -3,7 +3,7 @@ export default function CurriculoComponent(props) {
 
     var a
     if (lang == 'PT' || lang == null) {
-        a = 'VEJA MEU URRICULO'
+        a = 'VEJA MEU CURRICULO'
     } else {
         a = 'SEE MY RESUME'
     }
@@ -14,7 +14,7 @@ export default function CurriculoComponent(props) {
                     <img src="gen/A4-1.png" alt="" className="curriculo-img"/>
                 </div>
             </div>
-            <a className="link-curriculo" href="Curriculo-Ruan.pdf" download>{a}</a>
+            <a className="link-curriculo" href="curriculo_Ruan_PT_EN.pdf" download>{a}</a>
         </div>
     )
 }
