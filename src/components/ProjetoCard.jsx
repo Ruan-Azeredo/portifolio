@@ -2,6 +2,14 @@ import { Eyeslash } from "../icons/Eyeslash"
 
 export default function ProjetoCard(props) {
     const infos = props.infos
+    var lang = props.lang
+
+    var seeMore
+    if (lang == 'PT' || lang == null) {
+        seeMore = 'VER MAIS +'
+    } else {
+        seeMore = 'SEE MORE +'
+    }
 
     var flexDirection, hidden
     infos.id % 2 == 0 ? flexDirection = 'md:flex-row-reverse' : flexDirection = 'md:flex-row'
@@ -52,7 +60,7 @@ export default function ProjetoCard(props) {
                         </a>
                     )}
                     {infos.seeMore ? (
-                        <a href={infos.seeMore} className="py-1 px-3 w-fit border-2 rounded-md text-sm group-hover:translate-y-2 transition ease-in-out delay-300">VER MAIS +</a>
+                        <a href={infos.seeMore} className="py-1 px-3 w-fit border-2 rounded-md text-sm group-hover:translate-y-2 transition ease-in-out delay-300">{seeMore}</a>
                     ) : null}
                 </div>
                 <div className={`${hidden} bg-gradient-to-r from-azulescuro to-azulclaro md:text-md text-sm text-white md:font-medium font-light rounded-md py-1 md:px-5 px-3 w-fit absolute top-0 md:top-72 md:left-5 right-0`}>Adapti</div>
