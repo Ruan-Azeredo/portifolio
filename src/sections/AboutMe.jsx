@@ -1,17 +1,30 @@
+import { useContext } from "react";
 import CurriculoComponent from "../components/CurriculoComponent";
 import Title from "../components/Title";
 import VsScreenComponent from "../components/VsScreenComponent";
+import LanguageContext from "../context/LanguageContext";
 
 function AboutMe() {
+    const { lang } = useContext(LanguageContext)
+
+    var title, fav
+    if (lang == 'PT' || lang == null) {
+        title = 'SOBRE MIM'
+        fav = 'TECNOLOGIAS FAVORITAS'
+    } else {
+        title = 'ABOUT ME'
+        fav = 'FAVORITE TECHNOLOGIES'
+    }
+
     return (
         <div className="AboutMe"><a name='sobremim'></a>
-            <Title title='SOBRE MIM'/>
+            <Title title={title}/>
 
             <div className="aboutme-container">
-                <VsScreenComponent />
-                <CurriculoComponent/>
+                <VsScreenComponent lang={lang} />
+                <CurriculoComponent lang={lang}/>
             </div>
-            <h3 className="tecnologias-fav-title">TECNOLOGIAS FAVORITAS</h3>
+            <h3 className="tecnologias-fav-title">{fav}</h3>
             <div className="grid-bar-tech-fav"></div>
             <div className="tech-icons-container">
                 <div className="first-line">

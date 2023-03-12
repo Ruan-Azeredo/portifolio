@@ -1,6 +1,14 @@
-import { sobreMim } from "../data";
+import { aboutMe, sobreMim } from "../data";
 
-export default function VsScreenComponent() {
+export default function VsScreenComponent(props) {
+    var lang = props.lang
+
+    var aM
+    if (lang == 'PT' || lang == null) {
+        aM = sobreMim
+    } else {
+        aM = aboutMe
+    }
     return (
         <div>
             <div className="border-gradient z-10"><div className="inside-gradient">
@@ -20,7 +28,7 @@ export default function VsScreenComponent() {
                             <p className="ruan-function">Ruan() &#123;</p>
                             <div className="inside-function">
                                 <div className="gradient-bar-screen bg-gradient-to-b from-azulescuro to-azulclaro h-auto w-2"></div>
-                                <p className="inside-function-ruan">{sobreMim}</p>
+                                <p className="inside-function-ruan">{aM}</p>
                             </div>
                             <p className="ruan-close-function">&#125;</p>
                         </div>
