@@ -1,4 +1,4 @@
-import { Button } from "@nextui-org/react";
+import { Button, Tooltip } from "@nextui-org/react";
 import { useContext } from "react";
 import ModalButton from "../components/ModalButton";
 import RuanAzeredo from "../components/RuanAzeredo";
@@ -8,11 +8,12 @@ import { Language } from "../icons/Language";
 function MainCard() {
     const { lang, alterarLingua } = useContext(LanguageContext)
 
-    var p1, p2, l
+    var p1, p2, l, h
     if (lang == 'PT' || lang == null) {
         p1 = 'Alguém que adora música, café, JavaScript e '
         p2 = 'Vamos construir algo incrível juntos!'
         l = 'P'
+        h = 'hidden'
     } else {
         p1 = 'Someone who loves music, coffee, JavaScript and '
         p2 = "Let's build something amazing together!"
@@ -34,6 +35,9 @@ function MainCard() {
                     <ModalButton img="gen/perfilSquare.png">
                         <img src="gen/perfilSquare.png" alt="" className="w-8 h-8 rounded-full m-0"/>
                     </ModalButton>
+                    <Tooltip content="I'm Brazilian" placement="bottom">
+                        <img src="gen/brasil.png" alt="" className={`h-10 hue-rotate-15 relative -top-1 ${h}`} />
+                    </Tooltip>
                     {/* </a> */}
                     <Button
                         onClick={() => alterarLingua()}
