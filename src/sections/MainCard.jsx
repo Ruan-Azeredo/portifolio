@@ -25,7 +25,7 @@ function MainCard() {
                         <Button
                             onClick={() => alterarLingua()}
                             auto color="#152DFF" rounded bordered
-                            css={{background: "transparent", border: "none", h: 32}}
+                            css={{background: "transparent", border: "none", h: 32, w: 32, p: 0}}
                         ><Language className='scale-125' /></Button>
                     </div>
             <div className='navbar'>
@@ -38,7 +38,7 @@ function MainCard() {
                     <Button
                         onClick={() => alterarLingua()}
                         auto color="#152DFF" rounded bordered
-                        css={{background: "transparent", border: "none", h: 32}}
+                        css={{background: "transparent", border: "none", h: 32, w: 32, p: 0}}
                     ><Language /></Button>
                 </div>
                 <div className="justify-between div">
