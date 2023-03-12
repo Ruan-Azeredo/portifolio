@@ -66,7 +66,7 @@ export const projetos = [
     // }
 ]
 
-export const sobreMim = 'Olá, me chamo Ruan, tenho 20 anos e estou trilhando este caminho de Desenvolvedor Web. Gosto muito de desenvolver interfaces Front-end, porém estou sempre aberto a desenvolver o Back-end de algumas aplicações, afinal, gosto de construir aplicações completas que possa ver funcionando no final. Sou um grande fã de JavaScript e gosto de desenvolver alguns designs também. Gosto de estar sempre aberto para novas tecnologias.'
+export const sobreMim = 'Olá, me chamo Ruan, tenho 21 anos e estou trilhando este caminho de Desenvolvedor Web. Gosto muito de desenvolver interfaces Front-end, porém estou sempre aberto a desenvolver o Back-end de algumas aplicações, afinal, gosto de construir aplicações completas que possa ver funcionando no final. Sou um grande fã de JavaScript e gosto de desenvolver alguns designs também. Gosto de estar sempre aberto para novas tecnologias.'
 
 export const trajetorias = [
     {
@@ -284,5 +284,297 @@ export const crud = {
                 txt: 'A parte de conexão com o banco de dados fica por responsabilidade do Sequelize, que é um ORM que permite a conexão com o MySQL, um banco de dados relacional. Este banco de dados foi desenvolvido utilizando container com Docker.'
             }
         ]
+    }
+}
+
+/* EN */
+
+export const projects = [
+    {
+    id: 1,
+    name: 'MyBooks',
+    icons: ['next-icon.png', 'react-icon.png', 'js-icon.png', 'node-icon.png', 'firebase-icon.png', 'tailwind-icon.png', 'PostgreSQL'],
+    tags: ['Full-Stack', 'System', 'Rest API', 'Dark Mode', 'Google Authentication', 'PostgreSQL'],
+    screen: 'telamybooks.png',
+    description: 'This project is an application where the user can register their books and reviews, so they have an organized and intuitive place to leave their thoughts on the books they read. MyBooks was developed with separated Front-end and Back-end that communicate via API.',
+    link: 'https://github.com/Ruan-Azeredo/MyBooks',
+    // adapti: true,
+    seeMore: '/mybooks'
+    },
+    {
+    id: 2,
+    name: 'e-diaristas',
+    icons: ['next-icon.png', 'react-icon.png', 'typescript-icon.png', 'stayled-icon.png', 'laravel-icon.png', 'php-icon.png'],
+    tags: ['Full-Stack', 'System', 'MySQL', 'Rest API'],
+    screen: 'telaediaristas.png',
+    description: 'This project was developed during TreinaWeb bootcamp. It is a system with Laravel Back-end and a Front-end layer for the administrator, where it is possible to register cleaners and generate an API. The Front-end part that is in contact with the user was developed in Next.js, where the user enters a zip code and the system shows the nearby cleaners.',
+    link: 'https://github.com/Ruan-Azeredo/Bootcamp-Next-e-diaristas',
+    seeMore: '/ediaristas'
+    },
+    {
+    id: 3,
+    name: 'Financial System Landing Page',
+    icons: ['react-icon.png', 'js-icon.png', 'tailwind-icon.png'],
+    tags: ['react-typed', 'Landing Page', 'Static', 'Responsive', 'Front-end'],
+    screen: 'telafinancas.png',
+    description: 'A Landing Page with statistical content, made using React.js and Tailwind.css for styling. The lib react-icons and react-typed were also used in this project for some icons and reading animation, respectively. The project is 100% responsive, and this functionality was developed using Tailwind as well.',
+    link: 'https://github.com/Ruan-Azeredo/Finance-Landing-Page',
+    seeMore: 'https://finance-landing-page-ruby.vercel.app/'
+    },
+    {
+    id: 4,
+    name: 'Dynamic Company Page',
+    icons: ['laravel-icon.png', 'css-icon.png', 'php-icon.png'],
+    tags: ['Full-Stack', 'Slick', 'Administrative', 'Login', 'Dynamic', 'Responsive'],
+    screen: 'telairrigafacil.png',
+    description: "A page with dynamic content, developed at Adapti Junior Company, in a team with three other people. This project, developed with Laravel, was carried out to meet the client's demand, who needed a website as well as being able to update the information and banners on this website, the role of the administrative system.",
+    adapti: true,
+    seeMore: '/irrigafacil',
+    },
+    {
+        id: 5,
+        name: 'Email Registration',
+        icons: ['react-icon.png', 'node-icon.png', 'tailwind-icon.png'],
+        tags: ['Full-Stack', 'Rest API', 'MySQL', 'Sequelize'],
+        screen: 'telacrud.png',
+        description: 'A CRUD is a simple application that allows you to add, view, edit and delete information. In this project, the CRUD works with users, collecting their names and emails, as well as generating an ID for each one. The front-end of this project was developed in React.js, and the back-end in Node.js.',
+        link: 'https://github.com/Ruan-Azeredo/crud-usuarios-React-',
+        seeMore: '/cadastroemails'
+        },
+        {
+        id: 6,
+        name: 'Image Search',
+        icons: ['react-icon.png', 'tailwind-icon.png', 'js-icon.png'],
+        tags: ['Front-end', 'API Consumption'],
+        screen: 'telabuscaimgs.png',
+        description: 'An image searcher, where you can add a theme and related images will be displayed, the project uses native API consumption, using Fetch. The application styling uses Tailwind.css and CSS.',
+        link: 'https://github.com/Ruan-Azeredo/Buscador-de-Imagens',
+        seeMore: 'https://buscador-de-imagens-five.vercel.app/'
+        }
+        // {
+        // id: 6,
+        // name: 'Real Estate System'
+        // }
+]
+
+export const aboutMe = "Hello, my name is Ruan, I'm 21 years old and I'm on this path of Web Developer. I really enjoy developing Front-end interfaces, but I'm always open to developing the Back-end of some applications as well, after all, I like to build complete applications that I can see working in the end. I'm a big fan of JavaScript and I also enjoy developing some designs. I like to always be open to new technologies."
+
+export const trajetoriasEN = [
+    {
+        name: 'UFES',
+        logo: 'logo-ufes.png',
+        description: 'After finishing my high school, which was combined with a technical course in Mechanics, I decided that I wanted to pursue a career as a programmer. As a result, I enrolled in the Computer Engineering program at UFES.',
+        time: 'APR/2021',
+        link: 'https://www.ufes.br/'
+    },
+    {
+        name: 'Adapti',
+        logo: 'logo-adapti.png',
+        description: 'I joined the Computer Junior Company at the college, which is a non-profit organization for its members, and I am still a part of it today. Through this company, I learned how to program and got in touch with the world of web development.',
+        time: 'SEP/2021',
+        link: 'https://www.adapti.info/'
+    }
+]
+
+export const xpEN = [
+    ['Responsiveness', 'Dynamic Company Page, e-diaristas, Landing Page and others'],
+['Java', 'I used it in the Object-Oriented Programming class at UFES'],
+['Data Structures', 'Course I took and applied at UFES'],
+['C', 'Developed in Data Structures classes at UFES'],
+['Next.js', 'I took a specialized course and used it in projects like MyBooks and e-diaristas'],
+['SEO', 'Applied in projects developed at Adapti'],
+['React-hooks', 'Applied in all projects with React.js'],
+['Laravel', 'I learned it at Adapti and used it in all projects there'],
+['Git', 'I use it in all projects, as a branch management system'],
+['Design Pattern'],
+['JavaScript', 'Main language for Front-end, React.js, Next.js, used in all projects'],
+['Tailwind.css', 'Landing Page, MyBooks, Portfolio, Email Registration, Image Search'],
+['Next UI', 'React.js User Interface Library'],
+['CMS', 'Used in some projects at Adapti'],
+['TypeScript'],
+['GitHub', 'Used in all developed projects https://github.com/Ruan-Azeredo'],
+['Figma', 'Used to develop UX UI of more complex systems'],
+['Database', 'MongoDB, PostgreSQL, MySQL'],
+['Firebase', 'Mainly used for validation with Google'],
+['Styled Components', 'Used in the e-diaristas project'],
+['Docker', 'Database management system, used in Node.js back-ends'],
+['Bootstrap', 'Used in some Adapti projects'],
+['PHP', 'Laravel language, used in all my projects'],
+['Programming Logic', 'Had contact at UFES and apply it in day-to-day projects'],
+['Slick', 'Carousel library, very important in dynamic landing pages'],
+['REST API', 'Used in Back-end projects and Front-end that consumes these APIs'],
+['Xampp', 'Database management system I used at Adapti'],
+['Node.js', 'Back-end framework, uses JS, Email Registration, MyBooks'],
+['Python', 'Had contact at UFES, developed some small projects and activities with it'],
+['Accessibility', 'Standard of rules and practices I try to pay attention to in Front-end'],
+['PostgreSQL', 'Used in MyBooks'],
+['HTML', 'Markup language, used in all Front-end projects'],
+['MVC Architecture', 'Architecture present in Laravel, I am familiar with it'],
+['Dashboard', 'Developed in some personal projects and within Adapti'],
+['Sequelize', 'Library used in the back-end of Email Registration and MyBooks'],
+['CSS', 'Used in all Front-end projects'],
+['Scrum', 'Methodology used at Adapti in teams'],
+['CRUD', 'concept used in most Full-Stack and Adapti projects'],
+['Relational database', 'Includes PostgreSQL and MySQL projects'],
+['React.js', 'Favorite and most comfortable technology'],
+['MongoDB', 'Project at College'],
+['NoSQL database', 'Project in POO class'],
+['Deploy Vercel', 'Where some React.js and Next.js portfolio projects are hosted'],
+['MySQL Workbench', 'Used to build the modeling of Back-end databases'],
+['Grid and Flex', 'Concept applied in all Front-end projects'],
+['jQuery', 'Used in some Adapti projects for JS manipulation'],
+['Object-Oriented Programming', 'Concept learned at UFES and applied in all frameworks I use'],
+    ['CORS', 'Dependency that manages access permissions used in Back-end'],
+    ['Access Levels', 'Mainly used in Adapti projects'],
+    ['Express', 'Dependency used in all Node.js projects']
+]
+
+export const myBooksEN = {
+    frontBack: true,
+    title: 'MyBooks',
+    icons: ['next-icon.png', 'react-icon.png', 'js-icon.png', 'node-icon.png', 'firebase-icon.png', 'tailwind-icon.png', 'PostgreSQL'],
+    tags: ['Full-Stack', 'System', 'Rest API', 'Dark Mode', 'Google Authentication', 'PostgreSQL'],
+    description: 'This project consists of an application where the user can register their books and reviews, so they have an organized and intuitive place to leave their reflections on the books they have read. MyBooks was developed with the Front-end and Back-end separated.',
+    linkFront: 'github.com/Ruan-Azeredo/MyBooks',
+    linkBack: 'github.com/Ruan-Azeredo/MyBooks-Backend',
+    mainImg: 'telamybooks.png',
+    type: 'frontAndBack',
+    conteudo: {
+    front: [
+    {
+    img: 'L_techmybooks.png',
+    txt: 'The front-end of this project was developed with Next, which is a Framework that works using the React library, and allows Server Side rendering. For styling, the Tailwind CSS Framework was used. Other dependencies were also added to the Next project for cookie management, authentication with Firebase, and communication with the Back-end API.'
+    }, {
+    img: 'figmamybooks.png',
+    txt: 'The first part of the project was the development of the visual identity, which was done through the software Figma. The main screens and modals, which would be used to add, update and delete Writers, Books and Reviews, were already referenced. In Figma, the dark and light themes were also defined, as can be seen in the image next to it.'
+    }, {
+    img: 'L_arqfrontmybooks.png',
+    txt: 'The project structure was made using the native componentization principle of React. The project was divided into Pages folders, which contain my main pages, Functions, which contain the request functions in axios and other functions that are used in various parts of the system, Contexts that store the global Hooks, Components, which hold the JSX components and the Content, which has components that hold other elements.'
+    }, {
+    img: 'loginmybooks.png',
+    txt: 'The project has a login screen, with authentication through Google, which is developed using Firebase. Login can be done with name, email, and password or by logging in with Google. The user login remains in the system through cookies, and when they expire or when the user logs out, each site route will be redirected to the login screen again.'
+    }, {
+    img: 'modalmybooks.png',
+    txt: 'The logic of the system consists of the user registering their authors, within the authors, the books related to them, and within these books registering the reviews, which are the main objective of the user. The system has the functionality of not only registering all the objects described above but also allowing the user to view, edit, and delete all data.'
+    }, {
+    img: 'L_darkmodemybooks.png',
+    txt: "The system has features such as dark mode, which saves the user's preference on the browser's localhost, and also has a user information card."
+    }
+    ], back: [
+        {
+            img: 'L_techbackmybooks.png',
+            txt: 'The system back-end was developed using Node.js, with the Express framework, Nodemon to aid in development, and Sequelize for project structuring with the database, which is implemented with PostgreSQL, using Docker to generate the database container. Cors was also used for validation of API routes, and Multer for archiving and image manipulation.'
+            }, {
+            img: 'L_arqbackmybooks.png',
+            txt: 'The API was architected as follows, with a config that communicates with the container running PostgreSQL, migrations and models that have the table structures of the databases, which are the users, authors, books, and reviews tables, respectively. The public folder holds the images that are archived through Multer.'
+            }, {
+            img: 'controllerDeleteBook.png',
+            txt: 'The Controllers are where API routes are effectively defined. Here we have an example of the delete route in the BookController, which, in addition to deleting the book, needs to delete the image that is saved in /public.'
+            }
+        ]}
+    }
+
+export const ediaristasEN = {
+    frontBack: true,
+    title: 'e-diaristas',
+    icons: ['next-icon.png', 'react-icon.png', 'typescript-icon.png', 'styled-icon.png', 'laravel-icon.png', 'php-icon.png'],
+    tags: ['Full-Stack', 'System', 'Rest API', 'MySQL'],
+    description: 'This project was developed in the TreinaWeb bootcamp and consists of a CRUD system made with Laravel, where cleaners can be registered and an API can be generated, and this application generates a Rest API. The Next.js part shows a field where the user enters a zip code, and the system shows the cleaners present near that zip code.',
+    linkFront: 'https://github.com/Ruan-Azeredo/Bootcamp-Next-e-diaristas',
+    linkBack: 'https://github.com/Ruan-Azeredo/Bootcamp-Api-laravel-e-diaristas',
+    mainImg: 'telaediaristas.png',
+    type: 'frontAndBack',
+    conteudo: {
+    front: [
+    {
+    img: 'telaprincipaldiarista.png',
+    txt: 'In general, the functionality of the part developed in Next.js has a simple objective, which is to query the API for which cleaners are near the address that was entered, and then receive and show these cleaners to the user in a simple, fast, and easy way.'
+    },
+    {
+    img: 'L_diaristasencontrados.png',
+    txt: 'With the information received from the Rest API, the website shows the cleaners nearby according to the zip code, along with some relevant information about these cleaners.'
+    },
+    {
+    img: 'telaediaristascrud.png',
+    txt: 'The cleaner registration system was developed in Laravel and PHP, which allows the construction of a full-stack system. It has a connection to the database, which in this project uses MySQL. The part that has interaction with the administrator user is basically a CRUD, with options to create, edit, view, and delete any cleaners.'
+    },
+    {
+    img: 'editardiaristas.png',
+    txt: 'To add and update information, there is a form that was developed natively with Laravel, with several types of inputs. These form fields also have requests so that the user does not add cleaners without some important information for the API to function.'
+    }
+    ],
+    back: [
+    {
+    img: 'viacepediaristas.png',
+    txt: 'The main task that the back-end of this project performs is to register the cleaners in the database and use their zip code to access the ViaCEP API, to get the location of this address, as well as get the zip code entered by the user on the open website and query, in a similar way to the cleaners query, the location of the website user, and compare it with that of the cleaners, to be able to return only the cleaners that have location compatibility.'
+    },
+    {
+    img: 'requisicoesediaristas.png',
+    txt: 'Within the Laravel back-end, several business rules were made that help the system to function so that information that does not match the adopted standard is not inserted into the database, thus reducing the index of problems that may occur.'
+    }
+    ]
+    }
+    }
+
+export const irrigafacilEN = {
+    frontBack: true,
+    title: 'Dynamic Company Page',
+    icons: ['laravel-icon.png', 'css-icon.png', 'php-icon.png'],
+    tags: ['Full-Stack', 'slick', 'Administrative', 'Login', 'Dynamic'],
+    description: "Dynamic content page, developed at Adapti Junior Company, in a team of four people. This project, developed with Laravel, was created to meet the client's demand for a website where they could update information and banners on their own through an administrative system.",
+    mainImg: 'telairrigafacil.png',
+    type: 'frontAndBack',
+    conteudo: {
+    front: [
+    {
+    img: 'irrigafaciltop.png',
+    txt: 'The website part of this project has a banner made with the slick library, as well as other sections, such as About Us, which features animation in the display of the MVV, and Services, which shows dynamically adjusting service types.'
+    },
+    {
+    img: 'irrigafacilbot.png',
+    txt: 'The Portfolio and Blog sections show some examples, the most recently added ones in particular. Both sections feature animations to display information on the index and a dedicated page to show all examples of each project and post. The project also includes a contact area that displays the location using the Google Maps API.'
+    }
+    ], back: [
+    {
+    img: 'crudirrigafacil.png',
+    txt: 'The back-end of this dynamic landing page is also made in Laravel, as this system has a monolithic architecture characteristic of the framework. The main function of the back-end of this application is to register information such as Posts, Banners, About us, and other information and store this data in the database, which in this project uses MySQL, a relational database.',
+    },
+    {
+    img: 'requestirrigafacil.png',
+    txt: 'This project also features login features that protect content editing routes and business rules that define some patterns of information that can be added to the database so that different types of information from what is expected cannot be added, thus avoiding problems that may arise due to this incompatibility.'
+    }
+    ]
+    }
+    }
+
+export const crudEN = {
+    frontBack: true,
+    title: 'Email Registration',
+    icons: ['react-icon.png', 'node-icon.png', 'tailwind-icon.png'],
+    tags: ['Full-Stack', 'Rest API', 'MySQL', 'Sequelize'],
+    description: 'A CRUD is a simple application that allows you to add, view, edit and delete information. In this project, the CRUD works with users, collecting their names and emails, as well as generating an ID for each one. The front-end of this project was developed in React.js, and the back-end in Node.js.',
+    mainImg: 'telacrud.png',
+    type: 'frontAndBack',
+    conteudo: {
+    front: [
+    {
+    img: 'principalcrud.png',
+    txt: 'This project was developed with a well-defined front-end and back-end structure through the use of the React.js and Node.js frameworks, respectively. Since both frameworks use the JavaScript language, the connection between the front and back is made through a Rest API, with the help of Axios, both in React.js and Node.js.'
+    },
+    {
+    img: 'modalcrud.png',
+    txt: 'The design of this project was also developed by me, and generally shows a table, with the standard options of a CRUD, to view, edit, delete and update each item. The "react-modal" library was also used for modal use.'
+    }
+    ],
+    back: [
+    {
+    img: 'controllercrud.png',
+    txt: 'The back-end of this project was developed through Node.js, which uses JavaScript, and was made using a structure with /config, which connects to the database, /migrations, which sets up the tables, /models, which models the tables, and /controllers, which manages the information and controls the Rest API calls, which are made by HTTP calls.'
+    },
+    {
+    img: 'migrationcrud.png',
+    txt: 'The part of connecting to the database is the responsibility of Sequelize, which is an ORM that allows connection to MySQL, a relational database. This database was developed using a container with Docker.'
+    }
+    ]
     }
 }
