@@ -1,12 +1,23 @@
+import { useContext } from "react";
 import CardContComponent from "../components/CardContComponent";
 import Title from "../components/Title";
+import LanguageContext from "../context/LanguageContext";
 
 export default function Contato() {
+    const { lang } = useContext(LanguageContext)
+    
+    var p
+    if (lang == 'PT' || lang == null) {
+        p = 'Se gostou do meu trabalho, entre  em contato comigo, estou sempre em busca de evolução e aprendizado'
+    } else {
+        p ='If you liked my job and projects, enter in contact with me, I always looking for evolution and apprenticeship'
+    }
+
     return (
         <div className="flex flex-col items-center"><a name='contato'></a>
             <div className="flex flex-col items-center">
-                <Title grayyscale={true} title="CONTATO"/>
-                <div className="text-contato w-[300px] md:w-[500px]">Se gostou do meu trabalho, entre  em contato comigo, estou sempre em busca de evolução e aprendizado</div>
+                <Title grayyscale={true} title={p[0] == 'S' ? "CONTATO" : 'CONTACT'}/>
+                <div className="text-contato w-[300px] md:w-[500px]">{p}</div>
                 <div className="flex flex-col md:flex-row my-10 gap-8 text-white">
                     <div className="bg-black py-4 px-4 border-grayy border-2 rounded-lg flex gap-4 items-center hover:bg-slate-800 group">
                         <img className="h-10 w-10" src="gen/174857.png" alt="" />
