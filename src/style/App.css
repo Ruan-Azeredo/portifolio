@@ -184,9 +184,9 @@ a:visited, a:link{
   justify-content: space-between;
 }
 
-.navbar div{
+.navbar .div{
   display: flex;
-  justify-content: space-between;
+  /* justify-content: space-between; */
   width: 50%;
 }
 
