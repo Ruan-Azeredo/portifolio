@@ -33,7 +33,7 @@ function MainCard() {
 
     return (
         <div className="main-card-section">
-                <ul className={`absolute top-0 bg-gray-low w-[60%] h-full border-r border-grayy ease-in-out duration-500 ${transition} bg-black z-50`}>
+                <ul className={`fixed top-0 bg-gray-low w-[60%] h-full border-r border-grayy ease-in-out duration-500 ${transition} bg-black z-50`}>
                     <li className='px-4 py-6 border-b border-grayy'><a href="#sobremim">{l == 'P' ? 'SOBRE MIM' : 'ABOUT ME'}</a></li>
                     <li className='px-4 py-6 border-b border-grayy'><a href="#projetos">{l == 'P' ? 'PROJETOS' : 'PROJECTS'}</a></li>
                     <li className='px-4 py-6 border-b border-grayy'><a href="#trajetoria">{l == 'P' ? 'TRAJETORIA' : 'TRAJECTORY'}</a></li>
