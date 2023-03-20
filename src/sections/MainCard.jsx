@@ -1,9 +1,11 @@
 import { Button, Tooltip } from "@nextui-org/react";
-import { useContext } from "react";
+import { useContext, useState } from "react";
 import ModalButton from "../components/ModalButton";
 import RuanAzeredo from "../components/RuanAzeredo";
 import LanguageContext from "../context/LanguageContext";
+import { Hamburguer } from "../icons/Hamburger";
 import { Language } from "../icons/Language";
+import { Xmark } from "../icons/Xmark";
 
 function MainCard() {
     const { lang, alterarLingua } = useContext(LanguageContext)
@@ -20,15 +22,35 @@ function MainCard() {
         l = 'E'
     }
 
+    const [nav, setNav] = useState(false)
+
+    const handleNav = () => {
+        setNav(!nav)
+    }
+
+    var transition
+    nav ? transition = 'left-0' :  transition = 'left-[-100%]'
+
     return (
         <div className="main-card-section">
-                    <div className="md:hidden justify-end grid">
-                        <Button
-                            onClick={() => alterarLingua()}
-                            auto color="#152DFF" rounded bordered
-                            css={{background: "transparent", border: "none", h: 32, w: 32, p: 0}}
-                        ><Language className='scale-125' /></Button>
-                    </div>
+                <ul className={`absolute top-0 bg-gray-low w-[60%] h-full border-r border-grayy ease-in-out duration-500 ${transition} bg-black z-50`}>
+                    <li className='px-4 py-6 border-b border-grayy'><a href="#sobremim">{l == 'P' ? 'SOBRE MIM' : 'ABOUT ME'}</a></li>
+                    <li className='px-4 py-6 border-b border-grayy'><a href="#projetos">{l == 'P' ? 'PROJETOS' : 'PROJECTS'}</a></li>
+                    <li className='px-4 py-6 border-b border-grayy'><a href="#trajetoria">{l == 'P' ? 'TRAJETORIA' : 'TRAJECTORY'}</a></li>
+                    <li className='px-4 py-6 border-b border-grayy'><a href="#contato">{l == 'P' ? 'CONTATO' : 'CONTACT'}</a></li>
+                </ul>
+            <div className="md:hidden flex justify-between px-4 md:px-0">
+                <Button
+                    onClick={() => alterarLingua()}
+                    auto color="#152DFF" rounded bordered
+                    css={{ background: "transparent", border: "none", h: 32, w: 32, p: 0 }}
+                    className='z-40'
+                ><Language className='scale-125' /></Button>
+                <button className='md:hidden text-white text-3xl' onClick={handleNav}>
+                    {nav ? <Xmark/> : <Hamburguer/>}
+                </button>
+
+            </div>
             <div className='navbar'>
                 <div className="gap-8 div">
                     {/* <a href="/" className="w-8 h-8"> */}
