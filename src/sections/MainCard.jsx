@@ -34,10 +34,10 @@ function MainCard() {
     return (
         <div className="main-card-section">
                 <ul className={`fixed top-0 bg-gray-low w-[60%] h-full border-r border-grayy ease-in-out duration-500 ${transition} bg-black z-50`}>
-                    <li className='px-4 py-6 border-b border-grayy'><a href="#sobremim">{l == 'P' ? 'SOBRE MIM' : 'ABOUT ME'}</a></li>
-                    <li className='px-4 py-6 border-b border-grayy'><a href="#projetos">{l == 'P' ? 'PROJETOS' : 'PROJECTS'}</a></li>
-                    <li className='px-4 py-6 border-b border-grayy'><a href="#trajetoria">{l == 'P' ? 'TRAJETORIA' : 'TRAJECTORY'}</a></li>
-                    <li className='px-4 py-6 border-b border-grayy'><a href="#contato">{l == 'P' ? 'CONTATO' : 'CONTACT'}</a></li>
+                    <li className='px-4 py-6 border-b border-grayy'><a onClick={handleNav} href="#sobremim">{l == 'P' ? 'SOBRE MIM' : 'ABOUT ME'}</a></li>
+                    <li className='px-4 py-6 border-b border-grayy'><a onClick={handleNav} href="#projetos">{l == 'P' ? 'PROJETOS' : 'PROJECTS'}</a></li>
+                    <li className='px-4 py-6 border-b border-grayy'><a onClick={handleNav} href="#trajetoria">{l == 'P' ? 'TRAJETORIA' : 'TRAJECTORY'}</a></li>
+                    <li className='px-4 py-6 border-b border-grayy'><a onClick={handleNav} href="#contato">{l == 'P' ? 'CONTATO' : 'CONTACT'}</a></li>
                 </ul>
             <div className="md:hidden flex justify-between px-4 md:px-0">
                 <Button
@@ -51,7 +51,7 @@ function MainCard() {
                         {l == 'P' ? ' PT-BR' : ' EN-US'}
                     </div>
                 </Button>
-                <button className='md:hidden text-white text-3xl' onClick={handleNav}>
+                <button className='md:hidden text-white text-3xl z-40' onClick={handleNav}>
                     {nav ? <Xmark/> : <Hamburguer/>}
                 </button>
 
