@@ -43,9 +43,14 @@ function MainCard() {
                 <Button
                     onClick={() => alterarLingua()}
                     auto color="#152DFF" rounded bordered
-                    css={{ background: "transparent", border: "none", h: 32, w: 32, p: 0 }}
+                    css={{ background: "transparent", border: "none", h: 42, w: 42, p: 0, color: 'white' }}
                     className='z-40'
-                ><Language className='scale-125' /></Button>
+                >
+                    <div className="flex p-4 items-center gap-4">
+                        <Language className='scale-125' />
+                        {l == 'P' ? ' PT-BR' : ' EN-US'}
+                    </div>
+                </Button>
                 <button className='md:hidden text-white text-3xl' onClick={handleNav}>
                     {nav ? <Xmark/> : <Hamburguer/>}
                 </button>
@@ -57,7 +62,7 @@ function MainCard() {
                     <ModalButton img="gen/perfilSquare.png">
                         <img src="gen/perfilSquare.png" alt="" className="w-8 h-8 rounded-full m-0"/>
                     </ModalButton>
-                    <Tooltip content="I'm Brazilian" placement="bottom">
+                    <Tooltip content="I'm Brazilian" placement="bottom" className="ml-2">
                         <img src="gen/brasil.png" alt="" className={`h-10 hue-rotate-15 relative -top-1 ${h}`} />
                     </Tooltip>
                     {/* </a> */}
@@ -65,7 +70,12 @@ function MainCard() {
                         onClick={() => alterarLingua()}
                         auto color="#152DFF" rounded bordered
                         css={{background: "transparent", border: "none", h: 32, w: 32, p: 0}}
-                    ><Language /></Button>
+                    >
+                        <div className="flex p-4 items-center gap-4 text-white">
+                            <Language className='scale-125' />
+                            {l == 'P' ? ' PT-BR' : ' EN-US'}
+                        </div>
+                    </Button>
                 </div>
                 <div className="justify-between div">
                     <span className='navbar-item'><a href="#sobremim">{l == 'P' ? 'SOBRE MIM' : 'ABOUT ME'}</a></span>
