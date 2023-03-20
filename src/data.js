@@ -293,7 +293,7 @@ export const projects = [
     {
     id: 1,
     name: 'MyBooks',
-    icons: ['next-icon.png', 'react-icon.png', 'js-icon.png', 'node-icon.png', 'firebase-icon.png', 'tailwind-icon.png', 'PostgreSQL'],
+    icons: ['next-icon.png', 'react-icon.png', 'js-icon.png', 'node-icon.png', 'firebase-icon.png', 'tailwind-icon.png'],
     tags: ['Full-Stack', 'System', 'Rest API', 'Dark Mode', 'Google Authentication', 'PostgreSQL'],
     screen: 'telamybooks.png',
     description: 'This project is an application where the user can register their books and reviews, so they have an organized and intuitive place to leave their thoughts on the books they read. MyBooks was developed with separated Front-end and Back-end that communicate via API.',
